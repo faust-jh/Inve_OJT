@@ -227,3 +227,9 @@ body {
     transition: 1 ease-in-out;
 
 }
+
+/* ------------------------alert------------------------ */
+.alert {
+    opacity: 1;
+    transition: opacity 0.6s;
+}

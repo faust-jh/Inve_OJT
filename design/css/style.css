@@ -3,22 +3,24 @@ fcbf4f
 f5f5ft5 */
 /*Open Sans*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&family=Roboto:wght@300&display=swap');
+
 /* general styling */
-*{
-  font-family: 'Poppins', sans-serif;
+* {
+    font-family: 'Poppins', sans-serif;
 }
-body{
-   cursor: default;
+
+body {
+    cursor: default;
 }
 
 /* ------------------------navbar------------------------ */
-.container ul li{ 
+.container ul li {
     background-color: transparent;
     border: none;
-
+    
 }
 
-.container ul li a{ 
+.container ul li a {
     /* border-radius: 40px; */
     cursor: pointer;
     transition: .5 ease-in-out;
@@ -27,62 +29,68 @@ body{
 
 }
 
-.container ul li a:hover{ 
+.container ul li a:hover {
     /* background-color: #fcbf4f; */
-   border-bottom: solid #665131 2px;
+    border-bottom: solid #665131 2px;
     cursor: pointer;
     transition: 1 ease-in-out;
-    
 
 }
 
 /* ------------------------sidebar------------------------ */
-.sidebar{
+.sidebar {
     margin-top: 62px;
-    background-image: linear-gradient(#665131,#f7e7e7, #fcbf4f, #665131);
+    background-image: linear-gradient(#665131, #f7e7e7, #fcbf4f, #665131);
 }
-.sidebar_card{
+
+.sidebar_card {
     padding-top: 10px;
     margin-left: 30px;
 }
-.sidebarTxt{
+
+.sidebarTxt {
     font-weight: 600;
     font-size: 20px;
 }
 
 /* ------------------------landingpage------------------------ */
-.l_card{
+.l_card {
     margin-top: 10%;
     margin-left: 5%;
     background-color: transparent;
     border: none;
 }
-.l2_card{
+
+.l2_card {
     margin-top: 60px;
     margin-left: 120px;
 }
 
-.btn_getStarted{
+.btn_getStarted {
     border-color: #fcbf4f;
     border-radius: 40px;
     background-color: #fcbf4f;
     font-weight: 600;
-    
+
 }
-.btn_getStarted:hover{
+
+.btn_getStarted:hover {
     border-color: #fcbf4f;
     background-color: #dd9b20;
 }
-.l_cardTitle{
+
+.l_cardTitle {
     font-size: 50px;
     font-weight: 600;
     word-spacing: 1px;
 }
-.l_cardSub{
+
+.l_cardSub {
     font-size: 30px;
     font-weight: 400;
 }
-.cardContainer{
+
+.cardContainer {
     height: 100vh;
     width: 100%;
     background-image: linear-gradient(#665131, #fcbf4f, #f5f5f5, #fff);
@@ -92,52 +100,60 @@ body{
 
 
 /* ------------------------aboutus------------------------ */
-.aboutBg{
+.aboutBg {
     height: 100vh;
     width: 100%;
-    background:#fff;
+    background: #fff;
 }
-.about_container{
+
+.about_container {
     padding-top: 5%;
     padding-left: 3%;
     color: black;
 }
 
-.aboutIcon{
-    color:2px solid yellow;
+.aboutIcon {
+    color: 2px solid yellow;
     font-size: 35px;
 }
-.aboutCol{
+
+.aboutCol {
     padding-top: 10px;
 }
-.aboutRow{
+
+.aboutRow {
     margin-top: 40px;
 }
-.aboutHead{
+
+.aboutHead {
     font-weight: 900;
     letter-spacing: 2px;
-    
-} 
+
+}
 
 /* ------------------------loginpage------------------------ */
-.loginLog{
+.loginLog {
     font-weight: 900;
 }
-.loginInput{
+
+.loginInput {
     border-radius: 50px;
     font-size: 20px;
 }
-.loginHorizon{
+
+.loginHorizon {
     max-width: 100%;
     text-align: center;
     margin: auto;
     position: relative;
 
 }
-.loginContainer{
+
+.loginContainer {
     margin-top: 500px;
 }
-.loginHorizon::before{
+
+.loginHorizon::before {
     content: "";
     width: 245px;
     height: 2px;
@@ -147,7 +163,8 @@ body{
     top: 50%;
     left: 0;
 }
-.loginHorizon::after{
+
+.loginHorizon::after {
     content: "";
     width: 245px;
     height: 2px;
@@ -157,48 +174,54 @@ body{
     top: 50%;
     right: 0;
 }
-.btn_loginAccnt{
+
+.btn_loginAccnt {
     margin-top: 15px;
     border-radius: 50px;
-    font-size:15px;
+    font-size: 15px;
     font-weight: 600;
 }
-.btn_loginAccnt:hover{
+
+.btn_loginAccnt:hover {
     background-color: #fcbf4f;
     border: #fcbf4f;
     transition: 1 ease-in-out;
 
 }
 
-.forgetPass{
+.forgetPass {
     font-size: 15px;
-    
-    
+
+
 }
-.forgetPass a{
+
+.forgetPass a {
     font-size: 15px;
     text-decoration: none;
 }
-.btn_signGoogle{
+
+.btn_signGoogle {
     border-radius: 50px;
-    font-size:15px;
+    font-size: 15px;
     font-weight: 600;
 
 }
-.btn_signGoogle:hover{
+
+.btn_signGoogle:hover {
     background-color: #fcbf4f;
     border: #fcbf4f;
-    transition: 1 ease-in-out;  
+    transition: 1 ease-in-out;
 }
 
 /* ------------------------create accnt------------------------ */
-.btn_createAccnt{
+.btn_createAccnt {
     margin-top: 25px;
     border-radius: 50px;
-    font-size:15px;
+    font-size: 15px;
     font-weight: 600;
 }
-.btn_createAccnt:hover{
+
+.btn_createAccnt:hover {
     background-color: #fcbf4f;
     border: #fcbf4f;
     transition: 1 ease-in-out;

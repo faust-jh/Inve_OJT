@@ -4,9 +4,6 @@ include '../includes/header.php';
 include '../includes/navbar.php';
 include '../includes/sidebardesign.php';
 
-
-
-
 ?>
 
 <div class="createContainer  m-1" style="width:60%">
@@ -32,7 +29,7 @@ include '../includes/sidebardesign.php';
 
 
             <a href="#" class=" btn_createAccnt btn  border-dark form-control">Register</a>
-            <span>Already a member?</span><a href="loginpage.php" class="signUp " style="font-weight: 600;"> <i>Sign in now</i></a>
+            <span>Already a member?</span><a href="../login/loginpage.php" class="signUp " style="font-weight: 600;"> <i>Sign in now</i></a>
 
         </div>
 

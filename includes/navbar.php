@@ -1,4 +1,3 @@
-
 <nav class="navbar border text-bg-light shadow-lg navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">COMPANY NAME</a>
@@ -6,10 +5,10 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-  
-     <div class="container d-flex justify-content-end">
+
+    <div class="container d-flex justify-content-end">
       <ul class="navbar-nav justify-content-between gap-5">
-        <li class="btn" >
+        <li class="btn">
           <a class="loginBtn_under nav-link active " aria-current="page" href="landingpage.php">Home</a>
         </li>
         <li class="btn">
@@ -22,7 +21,7 @@
           <a class="loginBtn nav-link active" aria-current="page" href="loginpage.php">Login</a>
         </li>
       </ul>
-     </div>
+    </div>
 
   </div>
 </nav>

@@ -35,25 +35,6 @@ body{
     
 
 }
-.loginBtn{
-    background-color: transparent;
-    border: none;
-}
-.loginBtn a{
-    cursor: pointer;
-    transition: .5 ease-in-out;
-    margin: 2px;
-    padding: 2px;
-}
-.loginBtn a:hover{
-       border-radius: 40px;
-       cursor: pointer;
-       transition: .5 ease-in-out;
-       margin: 2px;
-       padding: 2px;
-       
-}
-   
 
 /* ------------------------sidebar------------------------ */
 .sidebar{
@@ -64,6 +45,10 @@ body{
     padding-top: 10px;
     margin-left: 30px;
 }
+.sidebarTxt{
+    font-weight: 600;
+    font-size: 20px;
+}
 
 /* ------------------------landingpage------------------------ */
 .l_card{
@@ -72,12 +57,17 @@ body{
     background-color: transparent;
     border: none;
 }
+.l2_card{
+    margin-top: 60px;
+    margin-left: 120px;
+}
 
 .btn_getStarted{
     border-color: #fcbf4f;
     border-radius: 40px;
     background-color: #fcbf4f;
     font-weight: 600;
+    
 }
 .btn_getStarted:hover{
     border-color: #fcbf4f;
@@ -98,21 +88,23 @@ body{
     background-image: linear-gradient(#665131, #fcbf4f, #f5f5f5, #fff);
 }
 
-/* 
+
+
+
 /* ------------------------aboutus------------------------ */
 .aboutBg{
     height: 100vh;
     width: 100%;
-    background:black;
+    background:#fff;
 }
 .about_container{
     padding-top: 5%;
     padding-left: 3%;
-    color: white;
+    color: black;
 }
 
 .aboutIcon{
-    color: yellow;
+    color:2px solid yellow;
     font-size: 35px;
 }
 .aboutCol{
@@ -125,9 +117,9 @@ body{
     font-weight: 900;
     letter-spacing: 2px;
     
-} */
+} 
 
-/* ------------------------laginpage------------------------ */
+/* ------------------------loginpage------------------------ */
 .loginLog{
     font-weight: 900;
 }
@@ -141,6 +133,9 @@ body{
     margin: auto;
     position: relative;
 
+}
+.loginContainer{
+    margin-top: 500px;
 }
 .loginHorizon::before{
     content: "";
@@ -196,3 +191,16 @@ body{
     transition: 1 ease-in-out;  
 }
 
+/* ------------------------create accnt------------------------ */
+.btn_createAccnt{
+    margin-top: 25px;
+    border-radius: 50px;
+    font-size:15px;
+    font-weight: 600;
+}
+.btn_createAccnt:hover{
+    background-color: #fcbf4f;
+    border: #fcbf4f;
+    transition: 1 ease-in-out;
+
+}

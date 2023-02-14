@@ -1,0 +1,43 @@
+if (!empty($_POST['login'])) {
+    mysqli_select_db($con, "inventory_system");
+    $email = $_POST['email'];
+    $pass = $_POST['password'];
+    $query =  "SELECT * FROM company_account
+                    WHERE CompanyEmail = '$email' and CompanyPassword = '$pass'";
+    $result = mysqli_query($con, $query);
+    $count = mysqli_num_rows($result);
+    if ($count > 0) {
+        $_SESSION['CompanyEmail'] = $email;
+        $_SESSION['CompanyPass'] = $pass;
+        header("Location: ../inventory_dashboard/index.php");
+    } else {
+        echo '<script type = "text/javascript">';
+        echo 'alert("Invalid Username and Password!")';
+        echo 'window.location.href = "loginpage.php"';
+        echo '</script>';
+    }
+    if (isset($_SESSION['CompanyEmail'])) {
+        header("Location: ../inventory_system/index.php");
+    }
+
+
+
+
+
+
+if (is_array($row)) {
+            $_SESSION['CompanyEmail'] = $row['CompanyEmail'];
+            $_SESSION['CompanyPass'] = $row['CompanyPass'];
+        } else {
+            echo '<script type = "text/javascript">';
+            echo 'alert("Invalid Username and Password!")';
+            echo 'window.location.href = "loginpage.php"';
+            echo '</script>';
+        }
+        if (isset($_SESSION['CompanyEmail'])) {
+            header("Location: ../inventory_dashboard/index.php");
+        } else {
+}
+
+
+       header("Location: loginpage.php");

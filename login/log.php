@@ -1,4 +1,5 @@
 <?php
+session_start();
 $server = "localhost";
 $username = "root";
 $con = mysqli_connect($server, $username);
@@ -15,10 +16,27 @@ if (!empty($_POST['login'])) {
     $result = mysqli_query($con, $query);
     $count = mysqli_num_rows($result);
     if ($count > 0) {
-        header("Location: ../inventory_dashboard/index.php");
+        $_SESSION['CompanyEmail'] = $email;
+        $_SESSION['CompanyPass'] = $pass;
+        if (is_array($row)) {
+            $_SESSION['CompanyEmail'] = $row['CompanyEmail'];
+            $_SESSION['CompanyPass'] = $row['CompanyPass'];
+        } else {
+            echo '<script type = "text/javascript">
+                alert("Invalid Username and Password!");
+                window.location.href = "loginpage.php";
+                </script>';
+        }
+        if (isset($_SESSION['CompanyEmail'])) {
+            echo '<script type = "text/javascript">
+                alert("Account login Succesfully!");
+                window.location.href = "../inventory_dashboard/index.php";
+                </script>';
+        }
     } else {
-        echo '<script>alert("Account Log In Failed")</script>';
-        echo "<center> </br><h3> Login Failed </h3> </center>";
-        echo '<center></br></br><button onclick = "history.back()"  class = "buttondes"> Close </button></center>';
+        echo '<script type = "text/javascript">
+        alert("Invalid Username and Password!");
+        window.location.href = "loginpage.php";
+        </script>';
     }
 }

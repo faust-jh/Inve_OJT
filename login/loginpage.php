@@ -1,8 +1,6 @@
 <?php
 include '../includes/header.php';
 include '../includes/navbar.php';
-?>
-<?php
 include '../includes/sidebardesign.php';
 ?>
 
@@ -28,11 +26,7 @@ include '../includes/sidebardesign.php';
         </div>
         <a href="#" class=" btn_signGoogle btn  border-dark form-control mt-2"><i class="fa-brands fa-google"></i> Sign in with Google</a>
         <span>Not a member?</span><a href="../register/createAccnt.php" class="signUp " style="font-weight: 600;"> <i>Sign up now</i></a>
-
-
     </div>
-
-
 </div>
 <?
 include '../includes/footer.php';

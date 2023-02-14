@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 13, 2023 at 07:24 AM
+-- Generation Time: Feb 14, 2023 at 03:32 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -29,17 +29,10 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `company_account` (
   `CompanyAccountID` int(5) NOT NULL,
+  `CompanyName` varchar(25) NOT NULL,
   `CompanyEmail` varchar(50) NOT NULL,
-  `CompanyPassword` varchar(30) NOT NULL,
-  `CompanyID` int(5) NOT NULL
+  `CompanyPassword` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `company_account`
---
-
-INSERT INTO `company_account` (`CompanyAccountID`, `CompanyEmail`, `CompanyPassword`, `CompanyID`) VALUES
-(1, 'thom@gmail.com', '123456789', 1);
 
 -- --------------------------------------------------------
 
@@ -48,18 +41,10 @@ INSERT INTO `company_account` (`CompanyAccountID`, `CompanyEmail`, `CompanyPassw
 --
 
 CREATE TABLE `company_profile` (
-  `CompanyID` int(5) NOT NULL,
-  `CompanyName` varchar(20) NOT NULL,
+  `CompanyAccountID` int(11) NOT NULL,
   `CompanyContactNumber` varchar(13) NOT NULL,
   `CompanyCreditCard` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `company_profile`
---
-
-INSERT INTO `company_profile` (`CompanyID`, `CompanyName`, `CompanyContactNumber`, `CompanyCreditCard`) VALUES
-(1, 'Thom', '09664174255', '1234567890123456');
 
 -- --------------------------------------------------------
 
@@ -73,13 +58,6 @@ CREATE TABLE `invoice` (
   `CompanyAccountID` int(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `invoice`
---
-
-INSERT INTO `invoice` (`InvoiceID`, `InvoiceDate`, `CompanyAccountID`) VALUES
-(1, '2023-02-13', 1);
-
 -- --------------------------------------------------------
 
 --
@@ -91,13 +69,6 @@ CREATE TABLE `item` (
   `ItemName` varchar(50) NOT NULL,
   `CompanyID` int(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `item`
---
-
-INSERT INTO `item` (`ItemID`, `ItemName`, `CompanyID`) VALUES
-(1, 'Caldareta', 1);
 
 -- --------------------------------------------------------
 
@@ -115,13 +86,6 @@ CREATE TABLE `product` (
   `ItemID` int(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `product`
---
-
-INSERT INTO `product` (`ProductID`, `ProductName`, `ProductQuantity`, `ProductSold`, `ProductDefect`, `ProductPrice`, `ItemID`) VALUES
-(1, 'Walang Gata', 10, 0, 0, '100.00', 1);
-
 -- --------------------------------------------------------
 
 --
@@ -133,13 +97,6 @@ CREATE TABLE `product_description` (
   `CategoryName` varchar(30) NOT NULL,
   `CategoryValue` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `product_description`
---
-
-INSERT INTO `product_description` (`ProductID`, `CategoryName`, `CategoryValue`) VALUES
-(1, 'Masarap', 'Kahit walang gata');
 
 -- --------------------------------------------------------
 
@@ -157,13 +114,6 @@ CREATE TABLE `sales` (
   `ProductID` int(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `sales`
---
-
-INSERT INTO `sales` (`SalesID`, `TotalSold`, `TotalDefect`, `TotalRevenue`, `SalesDate`, `InvoiceID`, `ProductID`) VALUES
-(1, 0, 0, '0.00', '2023-02-13', 1, 1);
-
 -- --------------------------------------------------------
 
 --
@@ -178,13 +128,6 @@ CREATE TABLE `subscription` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `subscription`
---
-
-INSERT INTO `subscription` (`SubscriptionID`, `SubscriptionType`, `ExpirationDate`, `CompanyAccountID`) VALUES
-(1, 'Premium', '2033-02-13', 1);
-
---
 -- Indexes for dumped tables
 --
 
@@ -192,14 +135,13 @@ INSERT INTO `subscription` (`SubscriptionID`, `SubscriptionType`, `ExpirationDat
 -- Indexes for table `company_account`
 --
 ALTER TABLE `company_account`
-  ADD PRIMARY KEY (`CompanyAccountID`),
-  ADD KEY `profile-account` (`CompanyID`);
+  ADD PRIMARY KEY (`CompanyAccountID`);
 
 --
 -- Indexes for table `company_profile`
 --
 ALTER TABLE `company_profile`
-  ADD PRIMARY KEY (`CompanyID`);
+  ADD KEY `prof-acc` (`CompanyAccountID`);
 
 --
 -- Indexes for table `invoice`
@@ -251,13 +193,7 @@ ALTER TABLE `subscription`
 -- AUTO_INCREMENT for table `company_account`
 --
 ALTER TABLE `company_account`
-  MODIFY `CompanyAccountID` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- AUTO_INCREMENT for table `company_profile`
---
-ALTER TABLE `company_profile`
-  MODIFY `CompanyID` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `CompanyAccountID` int(5) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `invoice`
@@ -294,22 +230,16 @@ ALTER TABLE `subscription`
 --
 
 --
--- Constraints for table `company_account`
+-- Constraints for table `company_profile`
 --
-ALTER TABLE `company_account`
-  ADD CONSTRAINT `profile-account` FOREIGN KEY (`CompanyID`) REFERENCES `company_profile` (`CompanyID`) ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE `company_profile`
+  ADD CONSTRAINT `prof-acc` FOREIGN KEY (`CompanyAccountID`) REFERENCES `company_account` (`CompanyAccountID`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `invoice`
 --
 ALTER TABLE `invoice`
   ADD CONSTRAINT `account-invoice` FOREIGN KEY (`CompanyAccountID`) REFERENCES `company_account` (`CompanyAccountID`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Constraints for table `item`
---
-ALTER TABLE `item`
-  ADD CONSTRAINT `item-company` FOREIGN KEY (`CompanyID`) REFERENCES `company_profile` (`CompanyID`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `product`

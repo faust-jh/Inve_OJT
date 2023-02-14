@@ -10,7 +10,7 @@
       <ul class="navbar-nav justify-content-between gap-5">
 
         <li class="btn">
-          <a class="loginBtn_under nav-link active " aria-current="page" href="../landing/landingpage.php">Home</a>
+          <a class="loginBtn_under nav-link active " aria-current="page" href="../landingpage/landingpage.php">Home</a>
         </li>
 
         <li class="btn">

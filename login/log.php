@@ -21,11 +21,6 @@ if (!empty($_POST['login'])) {
         if (is_array($row)) {
             $_SESSION['CompanyEmail'] = $row['CompanyEmail'];
             $_SESSION['CompanyPass'] = $row['CompanyPass'];
-        } else {
-            echo '<script type = "text/javascript">
-                alert("Invalid Username and Password!");
-                window.location.href = "loginpage.php";
-                </script>';
         }
         if (isset($_SESSION['CompanyEmail'])) {
             echo '<script type = "text/javascript">

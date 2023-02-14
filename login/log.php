@@ -15,10 +15,7 @@ if (!empty($_POST['login'])) {
     $result = mysqli_query($con, $query);
     $count = mysqli_num_rows($result);
     if ($count > 0) {
-        echo '<script>alert("Account Successfully Log In")</script>';
-        echo "<center> </br> <h3> Account succefully log in! </h3> </center>";
-        echo "<center> <h3> Thank you so much! </h3> </center>";
-        echo '<button onclick = "pro()" class = "buttondes"> Proceed </button>';
+        header("Location: ../inventory_dashboard/index.php");
     } else {
         echo '<script>alert("Account Log In Failed")</script>';
         echo "<center> </br><h3> Login Failed </h3> </center>";

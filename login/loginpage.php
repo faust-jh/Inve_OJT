@@ -23,7 +23,6 @@ include '../includes/sidebardesign.php';
                 <input type="submit" value="Login" id="login" name="login" class=" btn_loginAccnt btn  border-dark form-control">
             </form>
         </div>
-
         <div class="loginHorizon mt-3">
             <span class="loginHorizontal">or Sign with Google</span>
         </div>
@@ -35,8 +34,5 @@ include '../includes/sidebardesign.php';
 
 
 </div>
-
-
-
 <?
 include '../includes/footer.php';

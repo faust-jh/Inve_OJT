@@ -5,10 +5,7 @@ include '../includes/navbardash.php';
 include '../includes/sidebardash.php';
 ?>
 
-
 <h2 class="text-center py-2 display-6">PRODUCT</h2>
-
-
 <div class="container ">
     <div class="row col-md-10 m-1 m-auto justify-content-between">
         <div class="card" style="width: 18rem;">
@@ -21,6 +18,7 @@ include '../includes/sidebardash.php';
                 <a href="#" class="btn btn-primary">Edit</a>
             </div>
         </div>
+
         <!-- Another Card -->
         <div class="card" style="width: 18rem;">
             <img class="card-img-top m-auto" src="../design/images/shorts.jpeg" alt="Card image cap">
@@ -44,7 +42,6 @@ include '../includes/sidebardash.php';
                 <a href="#" class="btn btn-primary">Edit</a>
             </div>
         </div>
-
     </div>
 </div>
 

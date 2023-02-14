@@ -19,7 +19,6 @@ include '../includes/sidebardash.php';
                     <th>Item ID</th>
                     <th>Item Name</th>
                     <th>Manage</th>
-
                 </tr>
             </thead>
 
@@ -32,27 +31,18 @@ include '../includes/sidebardash.php';
             <tr>
                 <td>S-01</td>
                 <td>Short</td>
-
-
-
-
                 <td> <a href="view2.php" class="btn bg-primary text-white btn-sm"><i class="fa-regular fa-eye"></i></a>&nbsp; &nbsp;<a href="" class="btn bg-primary text-white btn-sm"><i class="fa-solid fa-pen-to-square"></i></a>&nbsp; &nbsp;<a href="" class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></a></td>
             </tr>
 
             <tr>
                 <td>D-01</td>
                 <td>Dress</td>
-
-
                 <td> <a href="view3.php" class="btn bg-primary text-white btn-sm"><i class="fa-regular fa-eye"></i></a>&nbsp; &nbsp;<a href="" class="btn bg-primary text-white btn-sm"><i class="fa-solid fa-pen-to-square"></i></a>&nbsp; &nbsp;<a href="" class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></a></td>
             </tr>
 
             <tbody>
 
             </tbody>
-
-
-
         </table>
     </div>
 </div>

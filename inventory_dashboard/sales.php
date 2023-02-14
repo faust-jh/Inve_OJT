@@ -6,7 +6,6 @@ include '../includes/sidebardash.php';
 ?>
 <div class="container p-2">
     <div class="row col-md-12 m-auto">
-
         <table id="example" class="display border" style="width:100%">
             <thead>
                 <tr>
@@ -16,7 +15,6 @@ include '../includes/sidebardash.php';
                     <th>Product ID</th>
                     <th>Product Variable ID</th>
                     <th>Product SubVariable ID</th>
-
                 </tr>
             </thead>
             <tbody>
@@ -27,7 +25,6 @@ include '../includes/sidebardash.php';
                     <td>input</td>
                     <td>input</td>
                     <td>input</td>
-
                 </tr>
                 <tr>
                     <td>002</td>
@@ -36,7 +33,6 @@ include '../includes/sidebardash.php';
                     <td>input</td>
                     <td>input</td>
                     <td>input</td>
-
                 </tr>
                 <tr>
                     <td>003</td>
@@ -45,7 +41,6 @@ include '../includes/sidebardash.php';
                     <td>input</td>
                     <td>input</td>
                     <td>input</td>
-
                 </tr>
                 <tr>
                     <td>004</td>
@@ -62,7 +57,6 @@ include '../includes/sidebardash.php';
                     <td>input</td>
                     <td>input</td>
                     <td>input</td>
-
                 </tr>
                 <tr>
                     <td>006</td>
@@ -71,7 +65,6 @@ include '../includes/sidebardash.php';
                     <td>input</td>
                     <td>input</td>
                     <td>input</td>
-
                 </tr>
                 <tr>
                     <td>007</td>
@@ -80,7 +73,6 @@ include '../includes/sidebardash.php';
                     <td>input</td>
                     <td>input</td>
                     <td>input</td>
-
                 </tr>
                 <tr>
                     <td>008</td>
@@ -89,7 +81,6 @@ include '../includes/sidebardash.php';
                     <td>input</td>
                     <td>input</td>
                     <td>input</td>
-
                 </tr>
                 <tr>
                     <td>009</td>
@@ -98,7 +89,6 @@ include '../includes/sidebardash.php';
                     <td>input</td>
                     <td>input</td>
                     <td>input</td>
-
                 </tr>
                 <tr>
                     <td>010</td>
@@ -107,12 +97,9 @@ include '../includes/sidebardash.php';
                     <td>input</td>
                     <td>input</td>
                     <td>input</td>
-
                 </tr>
-
-
-
             </tbody>
+
             <tfoot>
                 <tr>
                     <th>Sales ID</th>
@@ -121,8 +108,6 @@ include '../includes/sidebardash.php';
                     <th>Product ID</th>
                     <th>Product Variable ID</th>
                     <th>Product SubVariable ID</th>
-
-
                 </tr>
             </tfoot>
         </table>

@@ -1,0 +1,130 @@
+/*Open Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&family=Roboto:wght@300&display=swap');
+/* general styling */
+*{
+  font-family: 'Poppins', sans-serif;
+}
+:root {
+ 
+  --sidebar-width: 16rem;
+}
+
+/* utility classes */
+.box-shadow-1 {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+ 
+}
+
+.box-shadow-2 {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.select-none {
+  user-select: none !important;
+}
+
+.offcanvas {
+  background-color: #2f2d94 !important;
+}
+
+@media (min-width: 768px) {
+  .admin-navbar {
+    margin-left: var(--sidebar-width);
+    
+  }
+
+  .offcanvas {
+    visibility: visible;
+    transform: none !important;
+    height: 100%;
+    width: var(--sidebar-width) !important;
+    -webkit-transform: none;
+    top: 0;
+    background-color: #000000  !important;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .sidebar-close-btn {
+    display: none;
+  }
+
+  #main-content {
+    margin-left: var(--sidebar-width) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .dropdown-menu {
+    margin-top: 0 !important;
+    
+  }
+}
+.nav-item, .offcanvas-title{
+  font-size: 19px;
+  color: white;
+}
+.nav-item:active,
+.nav-item:focus,
+.nav-item:hover{
+
+
+  
+ 
+  color: #0da0f5;
+
+  
+
+ 
+}
+.dropdown-item:active,
+.dropdown-item:focus,
+.dropdown-item:hover{
+
+  background-color: rgb(255, 255, 255);
+  
+}
+.card-img-top{
+width: 200px;
+height: 200px;
+}
+.card-main-stock{
+  background-image: linear-gradient(to right , red, rgb(255, 174, 0), yellow);
+  
+}
+.nav-dropdown-link{
+  font-size: 20px;
+}
+.nav-text-link{
+  color: #000000;
+}
+.navbar{
+  background-color: #EBB50C;
+  
+}
+.nav-text-link:hover{
+  color:aliceblue;
+
+}
+.card-main-low{
+  background-color: #D46868;
+  
+}
+.card-main-middle{
+    background-color: #6B76D3;
+}
+.card-main-last{
+  background-color: #6CD36A;
+}
+.bg-last{
+  background-color: #A34848;
+}
+.bg-middle{
+  background-color: #49438D;
+}
+.bg-end{
+  background-color: #48985E;
+}
+.margin-end{
+margin-block-end: auto;
+
+}

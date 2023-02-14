@@ -207,7 +207,7 @@ include '../includes/sidebardash.php';
                 <td>Tshirt-05</td>
                 <td>V Neck</td>
                 <td>Small </td>
-                <td> Yellow</td>
+                <td>Yellow</td>
                 <td>600</td>
                 <td>560</td>
                 <td> <button class="btn bg-primary text-white btn-sm"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>   
@@ -227,19 +227,18 @@ include '../includes/sidebardash.php';
             <tr>
                 <td>T-00007</td>
                 <td>Tshirt-07</td>
-                <td>V Neck</td>
+                <td>V-Neck</td>
                 <td>Large </td>
-                <td> Purple</td>
+                <td>Purple</td>
                 <td>350</td>
                 <td>100</td>
-               
                 <td> <button class="btn bg-primary text-white btn-sm"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td> 
             </tr>
 
             <tr>
                 <td>T-00008</td>
                 <td>Tshirt-08</td>
-                <td>V Neck</td>
+                <td>V-Neck</td>
                 <td>XL</td>
                 <td>Orange</td>
                 <td>400</td>

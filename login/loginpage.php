@@ -22,7 +22,7 @@ include '../includes/sidebardesign.php';
             </form>
         </div>
         <div class="loginHorizon mt-3">
-            <span class="loginHorizontal">or Sign with Google</span>
+            <span class="loginHorizontal">or</span>
         </div>
         <a href="#" class=" btn_signGoogle btn  border-dark form-control mt-2"><i class="fa-brands fa-google"></i> Sign in with Google</a>
         <span>Not a member?</span><a href="../register/createAccnt.php" class="signUp " style="font-weight: 600;"> <i>Sign up now</i></a>

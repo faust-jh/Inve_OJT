@@ -1,10 +1,8 @@
 <?php
-
 include '../includes/headerdash.php';
 include '../includes/navbardash.php';
 include '../includes/sidebardash.php';
 ?>
-
 <div class="container">
     <div class="row">
 

@@ -3,9 +3,7 @@ include '../includes/headerdash.php';
 include '../includes/navbardash.php';
 include '../includes/sidebardash.php';
 ?>
-<?php
-session_start();
-?>
+
 <div class="container p-3 ">
     <div class="row col-md-8 border mx-auto ">
         <h2 class="text-center py-5 text-uppercase">Payment Receipt</h2>

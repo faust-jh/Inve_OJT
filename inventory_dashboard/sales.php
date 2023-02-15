@@ -3,9 +3,7 @@ include '../includes/headerdash.php';
 include '../includes/navbardash.php';
 include '../includes/sidebardash.php';
 ?>
-<?php
-session_start();
-?>
+
 <div class="container p-2">
     <div class="row col-md-12 m-auto">
         <table id="example" class="display border" style="width:100%">

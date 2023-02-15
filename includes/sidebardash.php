@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <div class="offcanvas offcanvas-start box-shadow-2" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
 
     <div class="offcanvas-header ">

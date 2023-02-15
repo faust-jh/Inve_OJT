@@ -1,11 +1,13 @@
 <?php
 
 include '../includes/header.php';
-include '../includes/navbar.php';
+
 include '../includes/sidebardesign.php';
 
 ?>
-
+<div class="navbar border text-bg-light shadow-lg navbar-expand-lg bg-body-tertiary d-flex justify-content-end m-1 border">
+<a button type="button" class="btn btn-primary"  href="../landingpage/landingpage.php">Back</a>
+</div>
 <div class="createContainer  m-1" style="width:60%">
     <div class="createForm m-5">
         <div class="createLog">

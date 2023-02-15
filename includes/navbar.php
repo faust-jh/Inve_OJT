@@ -9,7 +9,7 @@
     <div class="container d-flex justify-content-end">
       <ul class="navbar-nav justify-content-between gap-5">
 
-        <li class="btn">
+        <!-- <li class="btn">
           <a class="loginBtn_under nav-link active " aria-current="page" href="../landingpage/landingpage.php">Home</a>
         </li>
 
@@ -20,11 +20,26 @@
         <li class="btn">
           <a class="loginBtn_under nav-link active" aria-current="page" href="../contacts/contacts.php">Contacts</a>
         </li>
+ -->
 
+        
+        <li class="btn">
+          <a class="loginBtn_under nav-link active " aria-current="page" href="#home">Home</a>
+        </li>
 
+        <li class="btn">
+          <a class="loginBtn_under nav-link active" aria-current="page" href="#aboutus">About Us</a>
+        </li>
+
+        <li class="btn">
+          <a class="loginBtn_under nav-link active" aria-current="page" href="#contacts">Contacts</a>
+        </li>
+
+        
         <li class="btn ">
           <a class="loginBtn nav-link active" aria-current="page" href="../login/loginpage.php">Login</a>
         </li>
+
 
       </ul>
     </div>

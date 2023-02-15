@@ -18,17 +18,16 @@ include '../includes/sidebardash.php';
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <form>
+              <form id="createitem" name="createitem" method="POST" action="additem.php" autocomplete="off">
                 <div class="mb-3 text-start">
                   <label for="recipient-name" class="col-form-label">Enter Item Name:</label>
-                  <input type="text" class="form-control" id="recipient-name">
+                  <input type="text" class="form-control" id="recipient-name" name="recipient-name">
                 </div>
-
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Save</button>
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                </div>
               </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save</button>
-              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
             </div>
           </div>
         </div>

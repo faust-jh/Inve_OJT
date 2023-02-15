@@ -1,6 +1,7 @@
 <?php
 include '../includes/header.php';
 include '../includes/navbar.php';
+include '../includes/footer.php';
 ?>
 
 
@@ -67,7 +68,7 @@ include '../includes/navbar.php';
     #copyright{
         background-color: #FCBF4F;
         width: 100%;
-        text-align: center;"
+        text-align: center;
     }
 
     .grid-container{

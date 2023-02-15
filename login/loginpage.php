@@ -15,9 +15,12 @@ include '../includes/sidebardesign.php';
         <div class="loginData mt-3">
             <form id="log" name="log" method="POST" action="log.php" autocomplete="off">
                 <label for="email" class="form-label">Email</label>
-                <input type="text" class="loginInput form-control border-dark" style="border-radius: 50px; font-size:15px; " id="email" name="email" placeholder="Email@gmail.com" required>
+                <input type="email" class="loginInput form-control border-dark" style="border-radius: 50px; font-size:15px; " id="email" name="email" placeholder="Email@gmail.com" required>
                 <label for="password" class="form-label">Password</label>
                 <input type="password" class="loginInput form-control border-dark " style="border-radius: 50px;font-size:15px;" id="password" name="password" placeholder="Min. of 8 characters" required>
+                <div class="place">
+                    <input type="checkbox" onclick="showpass()">Show Password
+                </div>
                 <a href="#" class="forgetPass d-flex justify-content-end mt-1">Forget password?</a>
                 <input type="submit" value="Login" id="login" name="login" class=" btn_loginAccnt btn  border-dark form-control">
             </form>

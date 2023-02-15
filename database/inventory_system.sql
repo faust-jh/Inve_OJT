@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 15, 2023 at 03:02 AM
+-- Generation Time: Feb 15, 2023 at 03:46 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -41,9 +41,10 @@ CREATE TABLE `company_account` (
 --
 
 CREATE TABLE `company_profile` (
-  `CompanyAccountID` int(11) NOT NULL,
+  `CompanyProfileID` int(11) NOT NULL,
   `CompanyContactNumber` varchar(13) NOT NULL,
-  `CompanyCreditCard` varchar(20) NOT NULL
+  `CompanyCreditCard` varchar(20) NOT NULL,
+  `CompanyAccountID` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -92,6 +93,7 @@ CREATE TABLE `item_description` (
 CREATE TABLE `product` (
   `ProductID` int(5) NOT NULL,
   `ProductName` varchar(50) NOT NULL,
+  `ProductPicture` mediumblob NOT NULL,
   `ProductQuantity` int(11) NOT NULL,
   `ProductSold` int(11) NOT NULL,
   `ProductDefect` int(11) NOT NULL,
@@ -155,6 +157,7 @@ ALTER TABLE `company_account`
 -- Indexes for table `company_profile`
 --
 ALTER TABLE `company_profile`
+  ADD PRIMARY KEY (`CompanyProfileID`),
   ADD KEY `prof-acc` (`CompanyAccountID`);
 
 --
@@ -216,6 +219,12 @@ ALTER TABLE `subscription`
 --
 ALTER TABLE `company_account`
   MODIFY `CompanyAccountID` int(5) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `company_profile`
+--
+ALTER TABLE `company_profile`
+  MODIFY `CompanyProfileID` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `invoice`

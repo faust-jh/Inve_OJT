@@ -8,30 +8,53 @@ include '../includes/sidebardash.php';
 
     <h4 class="">Inventory</h4>
 
-    <div class="text-end p-1">
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">+Add New Item</button>
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Add Item </h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <form>
-                <div class="mb-3 text-start">
-                  <label for="recipient-name" class="col-form-label">Enter Item Name:</label>
-                  <input type="text" class="form-control" id="recipient-name">
-                </div>
 
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save</button>
-              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
-            </div>
+        <div class="text-end p-1">
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">+Add New Item</button>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Item </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3 text-start" >
+            <label for="recipient-name" class="col-form-label">Enter Item Name:</label>
+            <input type="text" class="form-control" id="recipient-name"> 
+            
+
           </div>
-        </div>
+        
+          <div class="mb-3 text-start">
+            <label for="recipient-name" class="col-form-label">Enter Category:</label>
+            <input type="text" class="form-control" id="recipient-name">
+            <br>
+            
+            <button type="button" class="btn btn-outline-primary"><i class="fa-solid fa-plus"></i> <label for="Add Category +"></label></button>
+              
+         
+          
+
+          <div class="mb-3 text-start">
+            <label for="recipient-name" class="col-form-label">Enter Value:</label>
+            <input type="text" class="form-control" id="recipient-name">
+            <br>
+            <button type="button" class="btn btn-outline-primary"><i class="fa-solid fa-plus"></i></button>
+
+          </div>
+          </div>
+
+
+        </form>
+      </div>
+      <div class="modal-footer"  >
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="liveAlertBtn">Save</button>
+       
+
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+
       </div>
     </div>
   </div>
@@ -70,7 +93,30 @@ include '../includes/sidebardash.php';
   </tbody>
 </table>
 </div>
+           
 </div>
 
+<script>
+  const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+
+const alert = (message, type) => {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
+}
+
+const alertTrigger = document.getElementById('liveAlertBtn')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    alert('Successfully Added!', 'success')
+  })
+}
+</script>
 <?php
 include '../includes/footerdash.php';

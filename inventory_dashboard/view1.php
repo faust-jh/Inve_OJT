@@ -15,12 +15,12 @@ include '../includes/sidebardash.php';
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Add Product </h5>
+        <h5 class="modal-title" id="exampleModalLabel">Add Product</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <form>
-          <div class="mb-3 text-start">
+        <div class="mb-3 text-start">
             <label for="recipient-name" class="col-form-label">Enter Product Name:</label>
             <input type="text" class="form-control" id="recipient-name">
           </div>
@@ -59,10 +59,20 @@ include '../includes/sidebardash.php';
 </select>
 
 </div>
+        </form>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save</button>
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+      </div>
 
-                            </form>
+        
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
+</div>
 </div>
 
 <table id="example" class="display border " style="width:100%">
@@ -294,231 +304,14 @@ include '../includes/sidebardash.php';
                 <td>120</td>
                 <td> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>   
             </tr>
-        </tbody>    
-
-    <tbody>
-        <tr>
-            <td>T-0001</td>
-            <td>Tshirt-01</td>
-            <td>Round Neck</td>
-            <td>Small</td>
-            <td>Black</td>
-            <td>300</td>
-            <td>50</td>
-            <td> <button class="btn bg-primary text-white btn-sm"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>
-        </tr>
-
-        <tr>
-            <td>T-0002</td>
-            <td>Tshirt-02</td>
-            <td>Round Neck</td>
-            <td>Medium</td>
-            <td>White</td>
-            <td>350</td>
-            <td>100</td>
-            <td> <button class="btn bg-primary text-white btn-sm"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>
-        </tr>
-
-        <tr>
-            <td>T-0003</td>
-            <td>Tshirt-03</td>
-            <td>Round Neck</td>
-            <td>XL</td>
-            <td>Blue</td>
-            <td>400</td>
-            <td>120</td>
-            <td> <button class="btn bg-primary text-white btn-sm"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>
-        </tr>
-
-        <tr>
-            <td>T-0004</td>
-            <td>Tshirt-04</td>
-            <td>Round Neck</td>
-            <td>Small</td>
-            <td>Green</td>
-            <td>500</td>
-            <td>200</td>
-            <td> <button class="btn bg-primary text-white btn-sm"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>
-        </tr>
-
-        <tr>
-            <td>T-0005</td>
-            <td>Tshirt-05</td>
-            <td>Round Neck</td>
-            <td>Medium </td>
-            <td>Yellow</td>
-            <td>300</td>
-            <td>50</td>
-            <td> <button class="btn bg-primary text-white btn-sm"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>
-        </tr>
-
-        <tr>
-            <td>T-0006</td>
-            <td>Tshirt-06</td>
-            <td>Round Neck</td>
-            <td>XL </td>
-            <td>Gray</td>
-            <td>350</td>
-            <td>100</td>
-            <td> <button class="btn bg-primary text-white btn-sm"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>
-        </tr>
-
-        <tr>
-            <td>T-0007</td>
-            <td>Tshirt-07</td>
-            <td>Round Neck</td>
-            <td>Mediun </td>
-            <td>Kaki</td>
-            <td>400</td>
-            <td>120</td>
-            <td> <button class="btn bg-primary text-white btn-sm"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>
-        </tr>
-
-        <tr>
-            <td>T-0008</td>
-            <td>Tshirt-08</td>
-            <td>Round Neck</td>
-            <td>Large</td>
-            <td> Orange</td>
-            <td>500</td>
-            <td>200</td>
-            <td> <button class="btn bg-primary text-white btn-sm"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>
-        </tr>
-
-        <tr>
-            <td>T-0009</td>
-            <td>Tshirt-09</td>
-            <td>Round Neck</td>
-            <td>Large</td>
-            <td> Purple</td>
-            <td>300</td>
-            <td>50</td>
-            <td> <button class="btn bg-primary text-white btn-sm"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>
-        </tr>
-
-        <tr>
-            <td>T-0010</td>
-            <td>Tshirt-010</td>
-            <td>Round Neck</td>
-            <td>Medium </td>
-            <td>Pink</td>
-            <td>350</td>
-            <td>100</td>
-            <td> <button class="btn bg-primary text-white btn-sm"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>
-        </tr>
-
-        <tr>
-            <td>T-0011</td>
-            <td>Tshirt-011</td>
-            <td>Round Neck</td>
-            <td>LArge </td>
-            <td>Navy Blue</td>
-            <td>400</td>
-            <td>120</td>
-            <td> <button class="btn bg-primary text-white btn-sm"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>
-        </tr>
-
-        <tr>
-            <td>T-0012</td>
-            <td>Tshirt-012</td>
-            <td>Round Neck</td>
-            <td>Small </td>
-            <td>Brown</td>
-            <td>500</td>
-            <td>200</td>
-            <td> <button class="btn bg-primary text-white btn-sm"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>
-        </tr>
-
-        <tr>
-            <td>T-00001</td>
-            <td>Tshirt-01</td>
-            <td>V Neck</td>
-            <td>Large </td>
-            <td>Black></td>
-            <td>300</td>
-            <td>50</td>
-            <td> <button class="btn bg-primary text-white btn-sm"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>
-        </tr>
-
-        <tr>
-            <td>T-00002</td>
-            <td>Tshirt-02</td>
-            <td>V Neck</td>
-            <td>Medium </td>
-            <td> White</td>
-            <td>350</td>
-            <td>100</td>
-            <td> <button class="btn bg-primary text-white btn-sm"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>
-        </tr>
-
-        <tr>
-            <td>T-00003</td>
-            <td>Tshirt-03</td>
-            <td>V Neck</td>
-            <td>Medium </td>
-            <td>Blue</td>
-            <td>400</td>
-            <td>120</td>
-            <td> <button class="btn bg-primary text-white btn-sm"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>
-        </tr>
-
-        <tr>
-            <td>T-00004</td>
-            <td>Tshirt-04</td>
-            <td>V Neck</td>
-            <td>Small </td>
-            <td> Green</td>
-            <td>500</td>
-            <td>200</td>
-            <td> <button class="btn bg-primary text-white btn-sm"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>
-        </tr>
-
-        <tr>
-            <td>T-00005</td>
-            <td>Tshirt-05</td>
-            <td>V Neck</td>
-            <td>Small </td>
-            <td>Yellow</td>
-            <td>600</td>
-            <td>560</td>
-            <td> <button class="btn bg-primary text-white btn-sm"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>
-        </tr>
-
-        <tr>
-            <td>T-00006</td>
-            <td>Tshirt-06</td>
-            <td>V Neck</td>
-            <td>Medium </td>
-            <td> Maroon</td>
-            <td>300</td>
-            <td>50</td>
-            <td> <button class="btn bg-primary text-white btn-sm"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>
-        </tr>
-
-        <tr>
-            <td>T-00007</td>
-            <td>Tshirt-07</td>
-            <td>V-Neck</td>
-            <td>Large </td>
-            <td>Purple</td>
-            <td>350</td>
-            <td>100</td>
-            <td> <button class="btn bg-primary text-white btn-sm"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>
-        </tr>
-
-        <tr>
-            <td>T-00008</td>
-            <td>Tshirt-08</td>
-            <td>V-Neck</td>
-            <td>XL</td>
-            <td>Orange</td>
-            <td>400</td>
-            <td>120</td>
-            <td> <button class="btn bg-primary text-white btn-sm"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>
-        </tr>
-    </tbody>
-
+        </tbody>
 </table>
+</div>
+</div>
+    </div>
+</div>
+
+      
 
 <?php
 include '../includes/footerdash.php';

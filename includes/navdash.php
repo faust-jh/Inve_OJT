@@ -1,9 +1,8 @@
 <?php
 session_start();
-unset($_SESSION['CompanyEmail']);
-unset($_SESSION['CompanyPass']);
+session_unset();
 session_destroy();
 echo '<script type = "text/javascript">
-alert("Account Logged Out!");
-window.location.href = "../login/loginpage.php";
-</script>';
+    alert("Account Logged Out!");
+    window.location.href = "../login/loginpage.php";
+    </script>';

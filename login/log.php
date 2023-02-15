@@ -18,12 +18,10 @@ if (!empty($_POST['login'])) {
     if ($count > 0) {
         $_SESSION['CompanyEmail'] = $email;
         $_SESSION['CompanyPass'] = $pass;
-        if (isset($_SESSION['CompanyEmail'])) {
-            echo '<script type = "text/javascript">
-                alert("Account login Succesfully!");
-                window.location.href = "../inventory_dashboard/index.php";
-                </script>';
-        }
+        echo '<script type = "text/javascript">
+        alert("Account login Succesfully!");
+        window.location.href = "../inventory_dashboard/index.php";
+        </script>';
     } else {
         echo '<script type = "text/javascript">
         alert("Invalid Username and Password!");

@@ -20,7 +20,7 @@ include '../includes/sidebardash.php';
             </div>
 
             <div class=" bg-last text-center">
-                <a href="lspviewmore.php" class=" text-decoration-none text-light ">View More <i class="fa-solid fa-circle-arrow-right"></i></a>
+                <a href="inventory.php" class=" text-decoration-none text-light ">More Info<i class="fa-solid fa-circle-arrow-right"></i></a>
             </div>
         </div>
 
@@ -36,7 +36,7 @@ include '../includes/sidebardash.php';
             </div>
 
             <div class=" bg-middle text-center">
-                <a href="" class=" text-decoration-none text-light ">View More <i class="fa-solid fa-circle-arrow-right"></i></a>
+                <a href="inventory.php" class=" text-decoration-none text-light ">More Info<i class="fa-solid fa-circle-arrow-right me-1"></i></a>
             </div>
         </div>
 
@@ -46,13 +46,13 @@ include '../includes/sidebardash.php';
             <div class="p-2 card-main-last">
                 <div class="">
                     <p class="lead text-start my-1 m-3">Weekly Sold Products </p>
-                    <p class="text-end"><span class="display-6">17</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-cube fa-3x"></i></p>
+                    <p class="text-end"><span class="display-6">17</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-cube fa-3x "></i></p>
                     <hr>
                 </div>
             </div>
 
             <div class=" bg-end text-center">
-                <a href="" class="text-decoration-none  text-light">View More <i class="fa-solid fa-circle-arrow-right"></i></a>
+                <a href="inventory.php" class="text-decoration-none  text-light">More Info<i class="fa-solid fa-circle-arrow-right me-1"></i></a>
             </div>
         </div>
     </div>

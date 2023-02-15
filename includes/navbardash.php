@@ -11,7 +11,7 @@
                 <a href="" class="nav-link text-black fw-bold dropdown-toggle" data-bs-toggle="dropdown">Hi&nbsp;User</a>
                 <ul class="dropdown-menu dropdown-menu-end rounded-0 box-shadow-1 border-0 text-center">
                     <li class="dropdown-item">
-                        <a href="navdash.php" class="nav-link text-black nav-text-link">Logout</a>
+                        <a href="../includes/navdash.php" class="nav-link text-black nav-text-link">Logout</a>
                     </li>
                 </ul>
             </div>

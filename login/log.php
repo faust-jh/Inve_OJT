@@ -18,10 +18,6 @@ if (!empty($_POST['login'])) {
     if ($count > 0) {
         $_SESSION['CompanyEmail'] = $email;
         $_SESSION['CompanyPass'] = $pass;
-        if (is_array($row)) {
-            $_SESSION['CompanyEmail'] = $row['CompanyEmail'];
-            $_SESSION['CompanyPass'] = $row['CompanyPass'];
-        }
         if (isset($_SESSION['CompanyEmail'])) {
             echo '<script type = "text/javascript">
                 alert("Account login Succesfully!");

@@ -68,9 +68,6 @@
                 <a href="inventory_stock.php" class="nav-link"><i class="fa-sharp fa-solid fa-bell"></i></i>Sample</a>
 
             </li> -->
-
-
-
         </ul>
     </div>
 </div>

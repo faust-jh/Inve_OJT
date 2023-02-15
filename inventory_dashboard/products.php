@@ -1,5 +1,4 @@
 <?php
-
 include '../includes/headerdash.php';
 include '../includes/navbardash.php';
 include '../includes/sidebardash.php';
@@ -18,7 +17,7 @@ include '../includes/sidebardash.php';
                 <a href="#" class="btn btn-primary">Edit</a>
             </div>
         </div>
-
+ 
         <!-- Another Card -->
         <div class="card" style="width: 18rem;">
             <img class="card-img-top m-auto" src="../design/images/shorts.jpeg" alt="Card image cap">

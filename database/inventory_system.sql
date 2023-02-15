@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 14, 2023 at 03:32 AM
+-- Generation Time: Feb 15, 2023 at 03:46 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -41,9 +41,10 @@ CREATE TABLE `company_account` (
 --
 
 CREATE TABLE `company_profile` (
-  `CompanyAccountID` int(11) NOT NULL,
+  `CompanyProfileID` int(11) NOT NULL,
   `CompanyContactNumber` varchar(13) NOT NULL,
-  `CompanyCreditCard` varchar(20) NOT NULL
+  `CompanyCreditCard` varchar(20) NOT NULL,
+  `CompanyAccountID` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -67,7 +68,20 @@ CREATE TABLE `invoice` (
 CREATE TABLE `item` (
   `ItemID` int(5) NOT NULL,
   `ItemName` varchar(50) NOT NULL,
-  `CompanyID` int(5) NOT NULL
+  `CompanyAccountID` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `item_description`
+--
+
+CREATE TABLE `item_description` (
+  `ItemCategoryID` int(11) NOT NULL,
+  `CategoryName` varchar(30) NOT NULL,
+  `CategoryValue` varchar(30) NOT NULL,
+  `ItemID` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -79,6 +93,7 @@ CREATE TABLE `item` (
 CREATE TABLE `product` (
   `ProductID` int(5) NOT NULL,
   `ProductName` varchar(50) NOT NULL,
+  `ProductPicture` mediumblob NOT NULL,
   `ProductQuantity` int(11) NOT NULL,
   `ProductSold` int(11) NOT NULL,
   `ProductDefect` int(11) NOT NULL,
@@ -93,9 +108,10 @@ CREATE TABLE `product` (
 --
 
 CREATE TABLE `product_description` (
-  `ProductID` int(5) NOT NULL,
+  `ProductCategoryID` int(11) NOT NULL,
   `CategoryName` varchar(30) NOT NULL,
-  `CategoryValue` varchar(30) NOT NULL
+  `CategoryValue` varchar(30) NOT NULL,
+  `ProductID` int(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -141,6 +157,7 @@ ALTER TABLE `company_account`
 -- Indexes for table `company_profile`
 --
 ALTER TABLE `company_profile`
+  ADD PRIMARY KEY (`CompanyProfileID`),
   ADD KEY `prof-acc` (`CompanyAccountID`);
 
 --
@@ -155,7 +172,14 @@ ALTER TABLE `invoice`
 --
 ALTER TABLE `item`
   ADD PRIMARY KEY (`ItemID`),
-  ADD KEY `item-company` (`CompanyID`);
+  ADD KEY `item-company` (`CompanyAccountID`);
+
+--
+-- Indexes for table `item_description`
+--
+ALTER TABLE `item_description`
+  ADD PRIMARY KEY (`ItemCategoryID`),
+  ADD KEY `itemd-item` (`ItemID`);
 
 --
 -- Indexes for table `product`
@@ -168,6 +192,7 @@ ALTER TABLE `product`
 -- Indexes for table `product_description`
 --
 ALTER TABLE `product_description`
+  ADD PRIMARY KEY (`ProductCategoryID`),
   ADD KEY `description-product` (`ProductID`);
 
 --
@@ -196,6 +221,12 @@ ALTER TABLE `company_account`
   MODIFY `CompanyAccountID` int(5) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT for table `company_profile`
+--
+ALTER TABLE `company_profile`
+  MODIFY `CompanyProfileID` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `invoice`
 --
 ALTER TABLE `invoice`
@@ -208,10 +239,22 @@ ALTER TABLE `item`
   MODIFY `ItemID` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+-- AUTO_INCREMENT for table `item_description`
+--
+ALTER TABLE `item_description`
+  MODIFY `ItemCategoryID` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
   MODIFY `ProductID` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `product_description`
+--
+ALTER TABLE `product_description`
+  MODIFY `ProductCategoryID` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `sales`
@@ -240,6 +283,18 @@ ALTER TABLE `company_profile`
 --
 ALTER TABLE `invoice`
   ADD CONSTRAINT `account-invoice` FOREIGN KEY (`CompanyAccountID`) REFERENCES `company_account` (`CompanyAccountID`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `item`
+--
+ALTER TABLE `item`
+  ADD CONSTRAINT `item-account` FOREIGN KEY (`CompanyAccountID`) REFERENCES `company_account` (`CompanyAccountID`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `item_description`
+--
+ALTER TABLE `item_description`
+  ADD CONSTRAINT `itemd-item` FOREIGN KEY (`ItemID`) REFERENCES `item` (`ItemID`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `product`

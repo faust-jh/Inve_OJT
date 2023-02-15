@@ -5,7 +5,7 @@ include '../includes/sidebardash.php';
 ?>
 <div class="container p-2">
   <div class="row col-md-12 m-auto">
-
+    <h4>Dress</h4>
 
 <div class="text-end p-2">
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">+Add New Product</button>

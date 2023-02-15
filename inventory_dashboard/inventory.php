@@ -9,7 +9,7 @@ include '../includes/sidebardash.php';
     <h4 class="">Inventory</h4>
 
 
-        <div class="text-end p-1">
+        <div class="text-end p-2">
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">+Add New Item</button>
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">

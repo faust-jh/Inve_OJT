@@ -6,7 +6,7 @@ include '../includes/sidebardash.php';
 
 <div class="container p-2">
     <div class="row col-md-12 m-auto p-2">
-
+     <h4>T-Shirt</h4>
 <!-- ADD PRODUCT MODAL -->
 
 <div class="text-end p-2">

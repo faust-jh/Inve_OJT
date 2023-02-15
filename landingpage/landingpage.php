@@ -133,109 +133,198 @@ include '../includes/navbar.php';
 
 </section>
 
-<footer id="contacts" style="height: 100vh;">
-    
-  <div id="contact-section">
-      <div id="contact-container" class="grid-container pt-5 pb-5">
-          <div class="left-container">
-              <div class="logo-container">
-                  <h1>LOGO NAME </h1>
-                  <p>Help your business to scale up by monitoring and managing your system.</p>
-              </div>
-          </div>
-              
-          <div class="right-container">
-              <div class="logo-container">
-                  <h4>Get in Touch </h4>
-                  <p>Help your business to scale up by monitoring and managing your system.</p>
-              </div>
-                  
-              <div class="logo-container">
-                  <h4>Get in Touch </h4>
-                  <p>204 Zone 2 Tangos Baliwag, Baliuag, 3006 Bulacaninfo@chonggos.com+(63)955-103-8858</p>
-              </div>
-          </div>
-      </div>
-      <div class="sm-icons-container">
-          <img class="social-media-icon" src="../design/images/facebook.png" alt="">
-          <img class="social-media-icon" src="../design/images/instagram.png" alt="">
-          <img class="social-media-icon" src="../design/images/youtube.png" alt="">
-          <img class="social-media-icon" src="../design/images/twitter.png" alt="">
-      </div>
-      <div style="display: flex; justify-content: center; width: 100%;">
-          <p style="padding:15px; border-right: 1px solid #f5f5f5;">Home</p>
-          <p style="padding:15px; border-right: 1px solid #f5f5f5;">About us</p>
-          <p style="padding:15px; border-right: 1px solid #f5f5f5;">Contacts</p>
-          <p style="padding:15px;">Login</p>
-      </div>
-  </div>
 
 
 
+<section id="description-section">
+    <h3 class="desc-title">Lorem ipsum dolor sit amet,</h3>
+    <div id="desc-container">
+        <div class="desc-box">
+            <img class="desc-pic" src="../design/images/stats.png" alt="">
+            <h5>Lorem ipsum dolor</h5>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+        </div>
+        <div class="desc-box">
+            <img class="desc-pic" src="../design/images/stats.png" alt="">
+            <h5>Lorem ipsum dolor</h5>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+        </div>
+        <div class="desc-box">
+            <img class="desc-pic" src="../design/images/stats.png" alt="">
+            <h5>Lorem ipsum dolor</h5>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+        </div>
+        <div class="desc-box">
+            <img class="desc-pic" src="../design/images/stats.png" alt="">
+            <h5>Lorem ipsum dolor</h5>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+        </div>
+        <div class="desc-box">
+            <img class="desc-pic" src="../design/images/stats.png" alt="">
+            <h5>Lorem ipsum dolor</h5>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+        </div>
+        <div class="desc-box">
+            <img class="desc-pic" src="../design/images/stats.png" alt="">
+            <h5>Lorem ipsum dolor</h5>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+        </div>
+    </div>
+</section>
 
 
-  <div id="copyright">
-      <h6 style="padding:5px;">Copyright © 2023 LogoName | All Rights Reserved.</h6>
-  </div>
 
-
-
-
-  <style>
-      h1,p,h4{
-          color: #f5f5f5;
-      }
-
-      #contact-section{
-          background-color: #1c1c1c;
-      }
-
-      #contact-container{
-          background-color: transparent;
-          width: 100%;
-          height: 90%;
-      }
-      #copyright{
-          background-color: #FCBF4F;
-          width: 100%;
-          text-align: center;"
-      }
-
-      .grid-container{
-          display: grid;
-          grid-template-columns: 50% 50%;
-      }
-
-      .left-container{
-          display: flex;
-          justify-content: center;
-          align-items: start;
-      }
-
-      .right-container{
-          display: flex;
-          justify-content: center;
-          align-items: start;
-      }
-
-      .logo-container{
-          width: 270px;
-          padding: 10px;
-      }
-
-      .sm-icons-container{
-          width: 100%;
-          text-align: center;
-          margin-bottom: 15px;
-      }
-
-      .social-media-icon{
-          width: 40px;
-          margin: 0 15px 0 15px;
-      }
-      
-  </style>
+<footer id="contacts">
+    <div id="contact-section">
+        <div id="contact-container" class="grid-container pt-5 pb-5">
+            <div class="left-container">
+                <div class="logo-container">
+                    <h1>LOGO NAME </h1>
+                    <p>Help your business to scale up by monitoring and managing your system.</p>
+                </div>
+            </div>
+                
+            <div class="right-container">
+                <div class="logo-container">
+                    <h4>Get in Touch </h4>
+                    <p>Help your business to scale up by monitoring and managing your system.</p>
+                </div>
+                    
+                <div class="logo-container">
+                    <h4>Get in Touch </h4>
+                    <p>204 Zone 2 Tangos Baliwag, Baliuag, 3006 Bulacaninfo@chonggos.com+(63)955-103-8858</p>
+                </div>
+            </div>
+        </div>
+        <div class="sm-icons-container">
+            <img class="social-media-icon" src="../design/images/facebook.png" alt="">
+            <img class="social-media-icon" src="../design/images/instagram.png" alt="">
+            <img class="social-media-icon" src="../design/images/youtube.png" alt="">
+            <img class="social-media-icon" src="../design/images/twitter.png" alt="">
+        </div>
+        <div style="display: flex; justify-content: center; width: 100%;">
+            <p style="padding:15px; border-right: 1px solid #f5f5f5;">Home</p>
+            <p style="padding:15px; border-right: 1px solid #f5f5f5;">About us</p>
+            <p style="padding:15px; border-right: 1px solid #f5f5f5;">Contacts</p>
+            <p style="padding:15px;">Login</p>
+        </div>
+    </div>
+    <div id="copyright">
+        <h6 style="padding:5px; margin-bottom: 0;">Copyright © 2023 LogoName | All Rights Reserved.</h6>
+    </div>
 </footer>
+
+
+
+<style>
+    /************Description Section***************/
+    h5{
+        color: #f5f5f5;
+    }
+
+    .desc-title{
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 100px;
+
+    }
+
+    #description-section{
+        margin-bottom: 150px;
+    }
+
+    #desc-container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 50px;
+        justify-content: center;
+    } 
+    .desc-box{
+        background-color: #1c1c1c;
+        text-align: center;
+        border-radius: 10px;
+        width: 300px;
+        box-shadow: 0px 0px 17px 9px rgba(0,0,0,0.69);
+        transition: transform .2s;
+    }
+    .desc-box:hover {
+        transform: scale(1.1);
+    }
+
+    .desc-box .desc-pic{
+        margin: 25px 0 35px 0;
+        width: 100px;
+    }
+    .desc-box h5{
+        font-weight: bold;
+    }
+    .desc-box p{
+        padding: 0 15px 0 15px;
+    }
+
+
+    /************Description Section***************/
+
+
+    /************Contacts Section*****************/
+    #contact-section h1,p,h4{
+        color: #f5f5f5;
+    }
+
+    #contact-section{
+        background-color: #1c1c1c;
+    }
+
+    #contact-container{
+        background-color: transparent;
+        width: 100%;
+        height: 90%;
+    }
+    #copyright{
+        background-color: #FCBF4F;
+        width: 100%;
+        text-align: center;"
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .left-container{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .right-container{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .logo-container{
+        width: 270px;
+        padding: 10px;
+    }
+
+    .sm-icons-container{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .social-media-icon{
+        width: 40px;
+        margin: 0 15px 0 15px;
+    }
+    /************Contacts Section*****************/
+
+
+
+</style>
+
+
 
 <?
 include 'includes/footer.php';

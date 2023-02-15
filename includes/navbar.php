@@ -22,20 +22,20 @@
         </li>
  -->
 
-        
+
         <li class="btn">
-          <a class="loginBtn_under nav-link active " aria-current="page" href="#home">Home</a>
+          <a class="loginBtn_under nav-link active " aria-current="page" href="../landingpage/landingpage.php?#home">Home</a>
         </li>
 
         <li class="btn">
-          <a class="loginBtn_under nav-link active" aria-current="page" href="#aboutus">About Us</a>
+          <a class="loginBtn_under nav-link active" aria-current="page" href="../landingpage/landingpage.php?#aboutus">About Us</a>
         </li>
 
         <li class="btn">
-          <a class="loginBtn_under nav-link active" aria-current="page" href="#contacts">Contacts</a>
+          <a class="loginBtn_under nav-link active" aria-current="page" href="../landingpage/landingpage.php?#contacts">Contacts</a>
         </li>
 
-        
+
         <li class="btn ">
           <a class="loginBtn nav-link active" aria-current="page" href="../login/loginpage.php">Login</a>
         </li>

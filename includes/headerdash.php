@@ -5,15 +5,13 @@ session_start();
 <html lang="en">
 
 <head>
-    <script>
-        function preventBack() {
-            window.history.forward();
-        }
-        setTimeout("preventBack()", 0);
-        window.onunload = function() {
-            null
-        };
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
     </script>
+>>>>>>> 976b9966ba19a542ba17ff4f07f7b269eaf308e6
+>>>>>>> 8fe991498ce41d19d5e5739af459df7ca7f7e63a
     <meta charset="UTF-8">
     <meta http - equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

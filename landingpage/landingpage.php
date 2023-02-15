@@ -2,121 +2,126 @@
 include '../includes/header.php';
 include '../includes/navbar.php';
 ?>
-<section id="home"style="height: 100vh;">
-  <div class="cardContainer d-flex ">
+<section id="home" style="height: 100vh;">
+    <div class="cardContainer d-flex ">
 
-    <div class="l_card" style="width: 21rem;">
-      <div class="card-body">
-        <h4 class="l_cardTitle">LOGO NAME</h4>
-        <h6 class="l_cardSub mb-2 text-muted">LOREM</h6>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <div class="getStarted">
-          <a href="#" class=" btn_getStarted btn border shadow-lg ">Get Started</a>
+        <div class="l_card" style="width: 21rem;">
+            <div class="card-body">
+                <h4 class="l_cardTitle">LOGO NAME</h4>
+                <h6 class="l_cardSub mb-2 text-muted">LOREM</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="getStarted">
+                    <a href="#" class=" btn_getStarted btn border shadow-lg ">Get Started</a>
+                </div>
+
+            </div>
         </div>
 
-      </div>
+        <div class="l2_card" style="width: 21rem;">
+            <div class="row d-flex justify-content-between">
+                <div class="pic1 col-6">
+                    <img src="../design/images/Finance_app.png" style="height:250px; width:250px; margin-left:30px ">
+                </div>
+
+                <div class="pic2 col-6">
+                    <img src="../design/images/Investment.png" style="height:250px; width:250px; margin-left:130px; margin-top:-60px">
+                </div>
+
+                <div class="pic2 col-12">
+                    <img src="../design/images/Finance.png" style="height:300px; width:300px; margin-left:130px;margin-top:-90px">
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
-
-    <div class="l2_card" style="width: 21rem;">
-      <div class="row d-flex justify-content-between">
-        <div class="pic1 col-6">
-          <img src="../design/images/Finance_app.png" style="height:250px; width:250px; margin-left:30px ">
-        </div>
-
-        <div class="pic2 col-6">
-          <img src="../design/images/Investment.png" style="height:250px; width:250px; margin-left:130px; margin-top:-60px">
-        </div>
-
-        <div class="pic2 col-12">
-          <img src="../design/images/Finance.png" style="height:300px; width:300px; margin-left:130px;margin-top:-90px">
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
 </section>
 
-<section id="aboutus"style="height: 100vh;">
-  
-  <div class="aboutBg" style="padding-top: 50px;">
+<section id="aboutus" style="height: 100vh;">
 
-    <div class="about_container">
-        <h4 class="aboutHead">Lorem ipsum dolor sit amet.</h4>
+    <div class="aboutBg" style="padding-top: 50px;">
 
-        <div class="aboutRow">
+        <div class="about_container">
+            <h4 class="aboutHead">Lorem ipsum dolor sit amet.</h4>
 
-            <div class="aboutRow_sub row ">
+            <div class="aboutRow">
 
-                <div class="aboutCol col">
-                    <div class="row ">
-                        <div class="col-1">
-                            <div class="aboutIcon">
-                                <img src="../design/images/arrowup.png" class="p-1" alt="..." style="height: 50px; width:50px;background:none; ">
+                <div class="aboutRow_sub row ">
+
+                    <div class="aboutCol col">
+                        <div class="row ">
+                            <div class="col-1">
+                                <div class="aboutIcon">
+                                    <img src="../design/images/arrowup.png" class="p-1" alt="..." style="height: 50px; width:50px;background:none; ">
+                                </div>
                             </div>
+                            <div class="col-10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique animi dolore, nemo impedit et incidunt est ullam. Iure, recusandae molestiae!</div>
                         </div>
-                        <div class="col-10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique animi dolore, nemo impedit et incidunt est ullam. Iure, recusandae molestiae!</div>
                     </div>
-                </div>
-                <div class="aboutCol col">
-                    <div class="row ">
-                        <div class="col-1">
-                            <div class="aboutIcon">
-                                <img src="../design/images/arrowup.png" class="p-1" alt="..." style="height: 50px; width:50px;background:none; ">
+                    <div class="aboutCol col">
+                        <div class="row ">
+                            <div class="col-1">
+                                <div class="aboutIcon">
+                                    <img src="../design/images/arrowup.png" class="p-1" alt="..." style="height: 50px; width:50px;background:none; ">
+                                </div>
                             </div>
+                            <div class="col-10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique animi dolore, nemo impedit et incidunt est ullam. Iure, recusandae molestiae!</div>
                         </div>
-                        <div class="col-10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique animi dolore, nemo impedit et incidunt est ullam. Iure, recusandae molestiae!</div>
                     </div>
+
+                </div>
+                <div class="aboutRow_sub row">
+
+                    <div class="aboutCol col">
+                        <div class="row mt-5">
+                            <div class="col-1">
+                                <div class="aboutIcon">
+                                    <img src="../design/images/arrowup.png" class="p-1" alt="..." style="height: 50px; width:50px;background:none; ">
+                                </div>
+                            </div>
+                            <div class="col-10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique animi dolore, nemo impedit et incidunt est ullam. Iure, recusandae molestiae!</div>
+                        </div>
+                    </div>
+                    <div class="aboutCol col">
+                        <div class="row mt-5">
+                            <div class="col-1">
+                                <div class="aboutIcon">
+                                    <img src="../design/images/arrowup.png" class="p-1" alt="..." style="height: 50px; width:50px;background:none; ">
+                                </div>
+                            </div>
+                            <div class="col-10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique animi dolore, nemo impedit et incidunt est ullam. Iure, recusandae molestiae!</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="aboutRow_sub row">
+
+                    <div class="aboutCol col">
+                        <div class="row mt-5">
+                            <div class="col-1">
+                                <div class="aboutIcon">
+                                    <img src="../design/images/arrowup.png" class="p-1" alt="..." style="height: 50px; width:50px;background:none; ">
+                                </div>
+                            </div>
+                            <div class="col-10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique animi dolore, nemo impedit et incidunt est ullam. Iure, recusandae molestiae!</div>
+                        </div>
+                    </div>
+                    <div class="aboutCol col">
+                        <div class="row mt-5">
+                            <div class="col-1">
+                                <div class="aboutIcon">
+                                    <img src="../design/images/arrowup.png" class="p-1" alt="..." style="height: 50px; width:50px;background:none; ">
+                                </div>
+                            </div>
+                            <div class="col-10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique animi dolore, nemo impedit et incidunt est ullam. Iure, recusandae molestiae!</div>
+                        </div>
+                    </div>
+
                 </div>
 
-            </div>
-            <div class="aboutRow_sub row">
 
-                <div class="aboutCol col">
-                    <div class="row mt-5">
-                        <div class="col-1">
-                            <div class="aboutIcon">
-                                <img src="../design/images/arrowup.png" class="p-1" alt="..." style="height: 50px; width:50px;background:none; ">
-                            </div>
-                        </div>
-                        <div class="col-10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique animi dolore, nemo impedit et incidunt est ullam. Iure, recusandae molestiae!</div>
-                    </div>
-                </div>
-                <div class="aboutCol col">
-                    <div class="row mt-5">
-                        <div class="col-1">
-                            <div class="aboutIcon">
-                                <img src="../design/images/arrowup.png" class="p-1" alt="..." style="height: 50px; width:50px;background:none; ">
-                            </div>
-                        </div>
-                        <div class="col-10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique animi dolore, nemo impedit et incidunt est ullam. Iure, recusandae molestiae!</div>
-                    </div>
-                </div>
 
-            </div>
-            <div class="aboutRow_sub row">
-
-                <div class="aboutCol col">
-                    <div class="row mt-5">
-                        <div class="col-1">
-                            <div class="aboutIcon">
-                                <img src="../design/images/arrowup.png" class="p-1" alt="..." style="height: 50px; width:50px;background:none; ">
-                            </div>
-                        </div>
-                        <div class="col-10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique animi dolore, nemo impedit et incidunt est ullam. Iure, recusandae molestiae!</div>
-                    </div>
-                </div>
-                <div class="aboutCol col">
-                    <div class="row mt-5">
-                        <div class="col-1">
-                            <div class="aboutIcon">
-                                <img src="../design/images/arrowup.png" class="p-1" alt="..." style="height: 50px; width:50px;background:none; ">
-                            </div>
-                        </div>
-                        <div class="col-10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique animi dolore, nemo impedit et incidunt est ullam. Iure, recusandae molestiae!</div>
-                    </div>
-                </div>
 
             </div>
 
@@ -124,12 +129,7 @@ include '../includes/navbar.php';
 
 
         </div>
-
-
-
-
     </div>
-  </div>
 
 </section>
 

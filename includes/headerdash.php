@@ -5,6 +5,10 @@ session_start();
 <html lang="en">
 
 <head>
+<<<<<<< HEAD
+=======
+    </script>
+>>>>>>> 976b9966ba19a542ba17ff4f07f7b269eaf308e6
     <meta charset="UTF-8">
     <meta http - equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

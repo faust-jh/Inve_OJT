@@ -1,48 +1,25 @@
-<nav class="navbar border text-bg-light shadow-lg navbar-expand-lg bg-body-tertiary sticky-md-top">
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" style="height:60px;">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">COMPANY NAME</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="#home">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-
-    <div class="container d-flex justify-content-end">
-      <ul class="navbar-nav justify-content-between gap-5">
-
-        <!-- <li class="btn">
-          <a class="loginBtn_under nav-link active " aria-current="page" href="../landingpage/landingpage.php">Home</a>
+    <div class="collapse  container-fluid bg-light navbar-collapse justify-content-end navigation" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#home">Home</a>
         </li>
-
-        <li class="btn">
-          <a class="loginBtn_under nav-link active" aria-current="page" href="../aboutus/aboutus.php">About Us</a>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#aboutus">About Us</a>
         </li>
-
-        <li class="btn">
-          <a class="loginBtn_under nav-link active" aria-current="page" href="../contacts/contacts.php">Contacts</a>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#contacts">Contacts</a>
         </li>
- -->
-
-
-        <li class="btn">
-          <a class="loginBtn_under nav-link active " aria-current="page" href="../landingpage/landingpage.php?#home">Home</a>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">Login</a>
         </li>
-
-        <li class="btn">
-          <a class="loginBtn_under nav-link active" aria-current="page" href="../landingpage/landingpage.php?#aboutus">About Us</a>
-        </li>
-
-        <li class="btn">
-          <a class="loginBtn_under nav-link active" aria-current="page" href="../landingpage/landingpage.php?#contacts">Contacts</a>
-        </li>
-
-
-        <li class="btn ">
-          <a class="loginBtn nav-link active" aria-current="page" href="../login/loginpage.php">Login</a>
-        </li>
-
-
+      
       </ul>
     </div>
-
   </div>
 </nav>

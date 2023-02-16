@@ -11,32 +11,19 @@ f5f5ft5 */
 
 body {
     cursor: default;
-}
-
-/* ------------------------navbar------------------------ */
-.container ul li {
-    background-color: transparent;
-    border: none;
     
 }
 
-.container ul li a {
-    border-radius: 50px;
-    cursor: pointer;
-    transition: .5 ease-in-out;
-    margin: 2px;
-    padding: 2px;
-
+/* ------------------------navbar------------------------ */
+.navigation{
+ 
 }
-
-.container ul li a:hover {
-    /* background-color: #fcbf4f; */
-    /* border-radius: 50px; */
-    /* border-bottom: #665131 2px; */
-   text-decoration: solid underline;
-    cursor: pointer;
-    transition: 1 ease-in-out;
-
+.navigation ul li{
+  margin-right: 10px;
+}
+.navigation ul li a:hover{
+  /* text-decoration: underline; */
+  border-bottom: 1px solid black;
 }
 
 /* ------------------------sidebar------------------------ */
@@ -56,18 +43,6 @@ body {
 }
 
 /* ------------------------landingpage------------------------ */
-.l_card {
-    margin-top: 10%;
-    margin-left: 5%;
-    background-color: transparent;
-    border: none;
-}
-
-.l2_card {
-    margin-top: 60px;
-    margin-left: 120px;
-}
-
 .btn_getStarted {
     border-color: #fcbf4f;
     border-radius: 40px;
@@ -85,6 +60,7 @@ body {
     font-size: 50px;
     font-weight: 600;
     word-spacing: 1px;
+    
 }
 
 .l_cardSub {
@@ -93,7 +69,6 @@ body {
 }
 
 .cardContainer {
-    height: 100vh;
     width: 100%;
     background-image: linear-gradient(#665131, #fcbf4f, #f5f5f5, #fff);
 }
@@ -158,7 +133,7 @@ body {
 
 .loginHorizon::before {
     content: "";
-    width: 295px;
+    width: 190px;
     height: 2px;
     display: block;
     background: black;
@@ -169,7 +144,7 @@ body {
 
 .loginHorizon::after {
     content: "";
-    width: 295px;
+    width: 190px;
     height: 2px;
     display: block;
     background: black;
@@ -230,9 +205,18 @@ body {
     transition: 1 ease-in-out;
 
 }
+/* @media (min-width: 576px) { 
+    .l2_card{
+        display: none;
+    }
+ } */
 
 /* ------------------------show pass------------------------ */
 .place {
     margin-top: 1%;
     margin-left: 2%;
 }
+td {
+    
+    padding-right: 40px;
+  }

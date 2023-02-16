@@ -5,17 +5,11 @@ include '../includes/navbar.php';
 include '../includes/sidebardesign.php';
 
 ?>
+<div class="createData mt-3">
 
-<div class="createContainer  m-1" style="width:60%">
-    <div class="createForm m-5">
-        <div class="createLog">
-            <h3>Create Account</h3>
-
-        </div>
-
-        <div class="createData mt-3">
-
-            <form id="create" name="create" method="POST" action="reg.php" autocomplete="off">
+    <form id="create" name="create" method="POST" action="reg.php" autocomplete="off">
+        <div class="row">
+            <div class="col">
                 <label for="companyname" class="form-label">Company Name </label>
                 <input type="text" class="createInput form-control border-dark" style="border-radius: 50px; font-size:15px; " id="companyname" name="companyname" placeholder="Company name">
 
@@ -31,10 +25,13 @@ include '../includes/sidebardesign.php';
                     <input type="checkbox" onclick="showpass2()">Show Password
                 </div>
                 <input type="submit" id="createbutton" name="createbutton" value="Register" class=" btn_createAccnt btn  border-dark form-control">
-            </form>
-            <span>Already a member?</span><a href="../login/loginpage.php" class="signUp " style="font-weight: 600;"> <i>Sign in now</i></a>
+            </div>
+            <div class="col">
+            <img src="../design/images/Computer.png" class="" alt="...">
+            </div>
         </div>
-    </div>
+    </form>
+    <span>Already a member?</span><a href="../login/loginpage.php" class="signUp " style="font-weight: 600;"> <i>Sign in now</i></a>
 </div>
 <?
 include '../includes/footer.php';

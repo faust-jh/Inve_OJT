@@ -3,7 +3,6 @@ include '../includes/headerdash.php';
 include '../includes/navbardash.php';
 include '../includes/sidebardash.php';
 ?>
-
 <?php
 $server = "localhost";
 $username = "root";
@@ -14,11 +13,10 @@ if (!$con) {
     mysqli_select_db($con, "inventory_system");
     $query1 = "SELECT CategoryName FROM item_description
                     WHERE ItemID = 1";
-    $result = mysqli_query($con, $query1);
-    $count = mysqli_num_rows($result);
+   
 
     $query2 = "SELECT CategoryName FROM item_description WHERE ItemID = 1";
-?>
+?> 
 
 <div class="container p-2">
     <div class="row col-md-12 m-auto p-2">
@@ -68,235 +66,109 @@ if (!$con) {
 </div>
 </div>
 
-<table id="example" class="display border " style="width:100%">
-    <thead>
-        <tr>
-            <th>Product ID</th>
-            <th>Product Name</th>
-            <th>Product Type</th>
-            <th>Product Size</th>
-            <th>Product Color</th>
-            <th>Item Quantity</th>
-            <th>Item Sold</th>
-            <th>Manage</th>
-        </tr>
-    </thead>
 
-        <tbody>
-            <tr>
-                <td>T-0001</td>
-                <td>Tshirt-01</td>
-                <td>Round Neck</td>
-                <td>Small</td>
-                <td>Black</td>
-                <td>300</td>
-                <td>50</td>
-                <td> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>   
-            </tr>
+<table id="example" class="display border" style="width:100%">
+  <thead>
+  
+  <tr>
+      <th>Product ID</th>
+      <th>Photo</th>
+      <th>Description</th>
+      <th>Quantity</th>
+      <th>Manage</th>
+    </tr>
+  </thead>
 
-            <tr>
-                <td>T-0002</td>
-                <td>Tshirt-02</td>
-                <td>Round Neck</td>
-                <td>Medium</td>
-                <td>White</td>
-                <td>350</td>
-                <td>100</td>
-                <td> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>   
-            </tr>
+  <tbody>
+    <tr>
+      <td style="width: 100px;">T-0001</td>
+      <td style="width:85px"><img src="image/tshirt.jpg" style="width: 85px;height:50px" alt="" srcset=""></td>
+      <td class="d-flex flex-column">
+        <div class="row">
+          <div class="col d-flex justify-content-end"><label><span class="text-muted">Name: </span>T-Shirt</label></div>
+          <div class="col"><label><span class="text-muted">Size: </span>Medium</label></div>
+        </div>
+        <div class="row">
+          <div class="col d-flex justify-content-end"><label><span class="text-muted">Type: </span>Round Neck</label></div>
+          <div class="col"><label><span class="text-muted">Color: </span>Pink</label></div>
+        </div>
+      </td>
+      <td style="width:200px">
+        <label><span class="text-muted">Stocks: </span>500</label><br>
+        <label><span class="text-muted">Sold: </span>150</label>
+      </td>
+      <td style="width: 100px;"> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>
 
-            <tr>
-                <td>T-0003</td>
-                <td>Tshirt-03</td>
-                <td>Round Neck</td>
-                <td>XL</td>
-                <td>Blue</td>
-                <td>400</td>
-                <td>120</td>
-                <td> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>   
-            </tr>
+      <tr>
+      <td style="width: 100px;">T-0002</td>
+      <td style="width:85px"><img src="image/red.jpg" style="width: 85px;height:50px" alt="" srcset=""></td>
+      <td class="d-flex flex-column">
+        <div class="row">
+          <div class="col d-flex justify-content-end"><label><span class="text-muted">Name: </span>Tshirt </label></div>
+          <div class="col"><label><span class="text-muted">Size: </span>Small</label></div>
+        </div>
+        <div class="row">
+          <div class="col d-flex justify-content-end"><label><span class="text-muted">Type: </span>Round Neck</label></div>
+          <div class="col"><label><span class="text-muted">Color: </span>Red</label></div>
+        </div>
+      </td>
+      <td style="width:200px">
+        <label><span class="text-muted">Stocks: </span>300</label><br>
+        <label><span class="text-muted">Sold: </span>200</label>
+      </td>
+      <td style="width: 100px;"> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>
 
-            <tr>
-                <td>T-0004</td>
-                <td>Tshirt-04</td>
-                <td>Round Neck</td>
-                <td>Small</td>
-                <td>Green</td>
-                <td>500</td>
-                <td>200</td>
-                <td> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>   
-            </tr>
+    </tr>
 
-            <tr>
-                <td>T-0005</td>
-                <td>Tshirt-05</td>
-                <td>Round Neck</td>
-                <td>Medium </td>
-                <td>Yellow</td>
-                <td>300</td>
-                <td>50</td>
-                <td> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>   
-            </tr>
-            <tr>
-                <td>T-0006</td>
-                <td>Tshirt-06</td>
-                <td>Round Neck</td>
-                <td>XL </td>
-                <td>Gray</td>
-                <td>350</td>
-                <td>100</td>
-                <td> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>   
-         
-            </tr>
 
-            <tr>
-                <td>T-0007</td>
-                <td>Tshirt-07</td>
-                <td>Round Neck</td>
-                <td>Mediun </td>
-                <td>Kaki</td>
-                <td>400</td>
-                <td>120</td>
-                <td> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>   
-            </tr>
-               
-            <tr>
-                <td>T-0008</td>
-                <td>Tshirt-08</td>
-                <td>Round Neck</td>
-                <td>Large</td>
-                <td> Orange</td>
-                <td>500</td>
-                <td>200</td>
-                <td> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>   
-            </tr>
-            <tr>
-                <td>T-0009</td>
-                <td>Tshirt-09</td>
-                <td>Round Neck</td>
-                <td>Large</td>
-                <td> Purple</td>
-                <td>300</td>
-                <td>50</td>
-                <td> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>   
-            </tr>
 
-            <tr>
-                <td>T-0010</td>
-                <td>Tshirt-010</td>
-                <td>Round Neck</td>
-                <td>Medium </td>
-                <td>Pink</td>
-                <td>350</td>
-                <td>100</td>
-                <td> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>   
-            </tr>
-            <tr>
-                <td>T-0011</td>
-                <td>Tshirt-011</td>
-                <td>Round Neck</td>
-                <td>LArge </td>
-                <td>Navy Blue</td>
-                <td>400</td>
-                <td>120</td>
-                <td> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>   
-            </tr>
 
-            <tr>
-                <td>T-0012</td>
-                <td>Tshirt-012</td>
-                <td>Round Neck</td>
-                <td>Small </td>
-                <td>Brown</td>
-                <td>500</td>
-                <td>200</td>
-                <td> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>   
-            </tr>
-            <tr>
-                <td>T-00001</td>
-                <td>Tshirt-01</td>
-                <td>V Neck</td>
-                <td>Large </td>
-                <td>Black></td>
-                <td>300</td>
-                <td>50</td>
-                <td> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>   
-            </tr>
-            <tr>
-                <td>T-00002</td>
-                <td>Tshirt-02</td>
-                <td>V Neck</td>
-                <td>Medium </td>
-                <td> White</td>
-                <td>350</td>
-                <td>100</td>
-                <td> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>   
-            </tr>
+      <tr>
+      <td style="width: 100px;">T-0003</td>
+      <td style="width:85px"><img src="image/vneck.jpg" style="width: 85px;height:50px" alt="" srcset=""></td>
+      <td class="d-flex flex-column">
+        <div class="row">
+          <div class="col d-flex justify-content-end"><label><span class="text-muted">Name: </span>Tshirt</label></div>
+          <div class="col"><label><span class="text-muted">Size: </span>medium</label></div>
+        </div>
+        <div class="row">
+          <div class="col d-flex justify-content-end"><label><span class="text-muted">Type: </span>V Neck</label></div>
+          <div class="col"><label><span class="text-muted">Color: </span>Navy Blue</label></div>
+        </div>
+      </td>
+      <td style="width:200px">
+        <label><span class="text-muted">Stocks: </span>650</label><br>
+        <label><span class="text-muted">Sold: </span>400</label>
+      </td>
+      <td style="width: 100px;"> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>
 
-            <tr>
-                <td>T-00003</td>
-                <td>Tshirt-03</td>
-                <td>V Neck</td>
-                <td>Medium </td>
-                <td>Blue</td>
-                <td>400</td>
-                <td>120</td>
-                <td> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>   
-            </tr>
-           
-            <tr>
-                <td>T-00004</td>
-                <td>Tshirt-04</td>
-                <td>V Neck</td>
-                <td>Small </td>
-                <td> Green</td>
-                <td>500</td>
-                <td>200</td>
-                <td> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>   
-            </tr>
+    </tr>
 
-            <tr>
-                <td>T-00005</td>
-                <td>Tshirt-05</td>
-                <td>V Neck</td>
-                <td>Small </td>
-                <td>Yellow</td>
-                <td>600</td>
-                <td>560</td>
-                <td> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>   
-            </tr>
-           
-            <tr>
-                <td>T-00006</td>
-                <td>Tshirt-06</td>
-                <td>V Neck</td>
-                <td>Medium </td>
-                <td> Maroon</td>
-                <td>300</td>
-                <td>50</td>
-                <td> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>   
-            </tr>
 
-            <tr>
-                <td>T-00007</td>
-                <td>Tshirt-07</td>
-                <td>V-Neck</td>
-                <td>Large </td>
-                <td>Purple</td>
-                <td>350</td>
-                <td>100</td>
-                <td> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>   
-            </tr>
-            <tr>
-                <td>T-00008</td>
-                <td>Tshirt-08</td>
-                <td>V-Neck</td>
-                <td>XL</td>
-                <td>Orange</td>
-                <td>400</td>
-                <td>120</td>
-                <td> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>   
-            </tr>
+
+
+
+    <tr>
+      <td style="width: 100px;">T-0004</td>
+      <td style="width:85px"><img src="image/yellow.jpg" style="width: 85px;height:50px" alt="" srcset=""></td>
+      <td class="d-flex flex-column">
+        <div class="row">
+          <div class="col d-flex justify-content-end"><label><span class="text-muted">Name: </span>Tshirt</label></div>
+          <div class="col"><label><span class="text-muted">Size: </span>Small</label></div>
+        </div>
+        <div class="row">
+          <div class="col d-flex justify-content-end"><label><span class="text-muted">Type: </span>V Neck</label></div>
+          <div class="col"><label><span class="text-muted">Color: </span>Yellow</label></div>
+        </div>
+      </td>
+      <td style="width:200px">
+        <label><span class="text-muted">Stocks: </span> 400</label><br>
+        <label><span class="text-muted">Sold: </span>150</label>
+      </td>
+      <td style="width: 100px;"> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>
+
+    </tr>
+
         </tbody>
 </table>
 </div>

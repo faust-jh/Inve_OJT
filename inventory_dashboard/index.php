@@ -25,9 +25,15 @@ include '../includes/navbardash.php';
             <li class="nav-item">
                 <a href="../inventory_dashboard/invoice.php" class="nav-link "><i class="fa-solid fa-file-invoice me-1"></i>Invoice</a>
             </li>
+            <li class="nav-item">
+                <a href="../inventory_dashboard/ordering.php" class="nav-link "><i class="fa-solid fa-file-invoice me-1"></i>Ordering</a>
+            </li>
         </ul>
     </div>
 </div>
+
+
+
 <div class="container">
     <div class="row">
 

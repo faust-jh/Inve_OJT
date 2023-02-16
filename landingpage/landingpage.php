@@ -265,7 +265,19 @@ include '../includes/navbar.php';
     .desc-box p {
         padding: 0 15px 0 15px;
     }
-
+    @media only screen and (max-width: 1200px) {
+    #desc-container {
+        grid-template-columns: auto auto;
+    }
+    .desc-box{
+        background-color: #1c1c1c;
+        text-align: center;
+        border-radius: 10px;
+        width: 300px;
+        box-shadow: 0px 0px 17px 9px rgba(0,0,0,0.69);
+        transition: transform .2s;
+    }
+}
 
     /************Description Section***************/
 

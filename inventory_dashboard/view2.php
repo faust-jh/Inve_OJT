@@ -25,9 +25,6 @@ include '../includes/sidebardash.php';
             <div class="row text-start"> 
                 
                 <label for="recipient-name">
-                    <?php
-                        echo $count;
-                    ?>
                 </label>
 
                 <select class="form-select" aria-label="Default select example">

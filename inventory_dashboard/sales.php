@@ -31,109 +31,41 @@ include '../includes/navbardash.php';
 <div class="container p-2">
     <div class="row col-md-12 m-auto">
         <table id="example" class="display border" style="width:100%">
-            <thead>
-                <tr>
-                    <th>Sales ID</th>
-                    <th>Total Number Sold</th>
-                    <th>Total Revenue</th>
-                    <th>Product ID</th>
-                    <th>Product Variable ID</th>
-                    <th>Product SubVariable ID</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>001</td>
-                    <td>input</td>
-                    <td>input</td>
-                    <td>input</td>
-                    <td>input</td>
-                    <td>input</td>
-                </tr>
-                <tr>
-                    <td>002</td>
-                    <td>input</td>
-                    <td>input</td>
-                    <td>input</td>
-                    <td>input</td>
-                    <td>input</td>
-                </tr>
-                <tr>
-                    <td>003</td>
-                    <td>input</td>
-                    <td>input</td>
-                    <td>input</td>
-                    <td>input</td>
-                    <td>input</td>
-                </tr>
-                <tr>
-                    <td>004</td>
-                    <td>input</td>
-                    <td>input</td>
-                    <td>input</td>
-                    <td>input</td>
-                    <td>input</td>
-                </tr>
-                <tr>
-                    <td>005</td>
-                    <td>input</td>
-                    <td>input</td>
-                    <td>input</td>
-                    <td>input</td>
-                    <td>input</td>
-                </tr>
-                <tr>
-                    <td>006</td>
-                    <td>input</td>
-                    <td>input</td>
-                    <td>input</td>
-                    <td>input</td>
-                    <td>input</td>
-                </tr>
-                <tr>
-                    <td>007</td>
-                    <td>input</td>
-                    <td>input</td>
-                    <td>input</td>
-                    <td>input</td>
-                    <td>input</td>
-                </tr>
-                <tr>
-                    <td>008</td>
-                    <td>input</td>
-                    <td>input</td>
-                    <td>input</td>
-                    <td>input</td>
-                    <td>input</td>
-                </tr>
-                <tr>
-                    <td>009</td>
-                    <td>input</td>
-                    <td>input</td>
-                    <td>input</td>
-                    <td>input</td>
-                    <td>input</td>
-                </tr>
-                <tr>
-                    <td>010</td>
-                    <td>input</td>
-                    <td>input</td>
-                    <td>input</td>
-                    <td>input</td>
-                    <td>input</td>
-                </tr>
-            </tbody>
-
-            <tfoot>
-                <tr>
-                    <th>Sales ID</th>
-                    <th>Total Number Sold</th>
-                    <th>Total Revenue</th>
-                    <th>Product ID</th>
-                    <th>Product Variable ID</th>
-                    <th>Product SubVariable ID</th>
-                </tr>
-            </tfoot>
+            <?php
+            $con = mysqli_connect("localhost", "root");
+            if (!$con) {
+                echo ("Can't connect!");
+            }
+            mysqli_select_db($con, "inventory_system");
+            $result = mysqli_query($con, "SELECT * FROM sales");
+            echo "<table border = '1' width = '1200' cellspacing = '0' style = 'font-size: 1.5vw'>";
+            echo "<tr bgcolor = 'lightgray'>";
+            echo "<th> Sales ID </th>";
+            echo "<th> Product ID </th>";
+            echo "<th> Total Defect</th>";
+            echo "<th> Total Sold </th>";
+            echo "<th> Total Revenue </th>";
+            echo "<th> Sales Date </th>";
+            echo "</tr>";
+            while ($row = mysqli_fetch_array($result)) {
+                $temp1 = $row['SalesID'];
+                $temp2 = $row['ProductID'];
+                $temp3 = $row['TotalDefect'];
+                $temp4 = $row['TotalSold'];
+                $temp5 = $row['TotalRevenue'];
+                $temp6 = $row['SalesDate'];
+                echo "<tr>";
+                echo "<td> $temp1 </td>";
+                echo "<td> $temp2 </td>";
+                echo "<td> $temp3 </td>";
+                echo "<td> $temp4 </td>";
+                echo "<td> $temp5 </td>";
+                echo "<td> $temp6 </td>";
+                echo "</tr>";
+            }
+            mysqli_close($con);
+            echo "</table>";
+            ?>
         </table>
     </div>
 </div>

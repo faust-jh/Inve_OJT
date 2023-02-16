@@ -183,13 +183,13 @@ include '../includes/navbar.php';
                     <p>Help your business to scale up by monitoring and managing your system.</p>
                 </div>
             </div>
-                
+
             <div class="right-container">
                 <div class="logo-container">
                     <h4>Get in Touch </h4>
                     <p>Help your business to scale up by monitoring and managing your system.</p>
                 </div>
-                    
+
                 <div class="logo-container">
                     <h4>Get in Touch </h4>
                     <p>204 Zone 2 Tangos Baliwag, Baliuag, 3006 Bulacaninfo@chonggos.com+(63)955-103-8858</p>
@@ -218,27 +218,57 @@ include '../includes/navbar.php';
 
 <style>
     /************Description Section***************/
-    h5{
+    h5 {
         color: #f5f5f5;
     }
 
-    .desc-title{
+    .desc-title {
         font-weight: bold;
         text-align: center;
         margin-bottom: 100px;
 
     }
 
-    #description-section{
+    #description-section {
         margin-bottom: 150px;
     }
 
-    #desc-container{
+    #desc-container {
         display: grid;
         grid-template-columns: auto auto auto;
         grid-gap: 50px;
         justify-content: center;
-    } 
+    }
+
+    .desc-box {
+        background-color: #1c1c1c;
+        text-align: center;
+        border-radius: 10px;
+        width: 300px;
+        box-shadow: 0px 0px 17px 9px rgba(0, 0, 0, 0.69);
+        transition: transform .2s;
+    }
+
+    .desc-box:hover {
+        transform: scale(1.1);
+    }
+
+    .desc-box .desc-pic {
+        margin: 25px 0 35px 0;
+        width: 100px;
+    }
+
+    .desc-box h5 {
+        font-weight: bold;
+    }
+
+    .desc-box p {
+        padding: 0 15px 0 15px;
+    }
+    @media only screen and (max-width: 1200px) {
+    #desc-container {
+        grid-template-columns: auto auto;
+    }
     .desc-box{
         background-color: #1c1c1c;
         text-align: center;
@@ -247,81 +277,68 @@ include '../includes/navbar.php';
         box-shadow: 0px 0px 17px 9px rgba(0,0,0,0.69);
         transition: transform .2s;
     }
-    .desc-box:hover {
-        transform: scale(1.1);
-    }
-
-    .desc-box .desc-pic{
-        margin: 25px 0 35px 0;
-        width: 100px;
-    }
-    .desc-box h5{
-        font-weight: bold;
-    }
-    .desc-box p{
-        padding: 0 15px 0 15px;
-    }
-
+}
 
     /************Description Section***************/
 
 
     /************Contacts Section*****************/
-    #contact-section h1,p,h4{
+    #contact-section h1,
+    p,
+    h4 {
         color: #f5f5f5;
     }
 
-    #contact-section{
+    #contact-section {
         background-color: #1c1c1c;
     }
 
-    #contact-container{
+    #contact-container {
         background-color: transparent;
         width: 100%;
         height: 90%;
     }
-    #copyright{
+
+    #copyright {
         background-color: #FCBF4F;
         width: 100%;
-        text-align: center;"
+        text-align: center;
     }
 
-    .grid-container{
+    .grid-container {
         display: grid;
         grid-template-columns: 50% 50%;
     }
 
-    .left-container{
+    .left-container {
         display: flex;
         justify-content: center;
         align-items: start;
     }
 
-    .right-container{
+    .right-container {
         display: flex;
         justify-content: center;
         align-items: start;
     }
 
-    .logo-container{
+    .logo-container {
         width: 270px;
         padding: 10px;
     }
 
-    .sm-icons-container{
+    .sm-icons-container {
         width: 100%;
         text-align: center;
         margin-bottom: 15px;
     }
 
-    .social-media-icon{
+    .social-media-icon {
         width: 40px;
         margin: 0 15px 0 15px;
     }
+
     /************Contacts Section*****************/
-
-
-
 </style>
 
 

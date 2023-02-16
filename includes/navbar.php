@@ -15,34 +15,10 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#contacts">Contacts</a>
         </li>
-<<<<<<< HEAD
         <li class="nav-item">
           <a class="nav-link active" aria-current="page"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">Login</a>
         </li>
       
-=======
- -->
-
-
-        <li class="btn">
-          <a class="loginBtn_under nav-link active " aria-current="page" href="../landingpage/landingpage.php?#home">Home</a>
-        </li>
-
-        <li class="btn">
-          <a class="loginBtn_under nav-link active" aria-current="page" href="../landingpage/landingpage.php?#aboutus">About Us</a>
-        </li>
-
-        <li class="btn">
-          <a class="loginBtn_under nav-link active" aria-current="page" href="../landingpage/landingpage.php?#contacts">Contacts</a>
-        </li>
-
-
-        <li class="btn ">
-          <a class="loginBtn nav-link active" aria-current="page" href="../login/loginpage.php">Login</a>
-        </li>
-
-
->>>>>>> e6b0958ae8a0d829b0197287ee2e41dc5a30d3de
       </ul>
     </div>
   </div>

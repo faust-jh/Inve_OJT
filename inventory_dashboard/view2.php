@@ -5,7 +5,7 @@ include '../includes/sidebardash.php';
 ?>
 <div class="container p-2">
   <div class="row col-md-12 m-auto">
-
+<h4>Short</h4>
 
 <div class="text-end p-2">
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">+Add New Product</button>
@@ -17,53 +17,30 @@ include '../includes/sidebardash.php';
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form>
-        <div class="mb-3 text-start">
-            <label for="recipient-name" class="col-form-label">Enter Product Name:</label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
-         <div class="row text-start"> 
-            
-         <label for="recipient-name" >Select Color:</label>
-          <select class="form-select" aria-label="Default select example">
-  <option selected></option>
-  <option value="1">Blue </option>
-  <option value="2">Red</option>
-  <option value="3">Green</option>
-  <option value="4">Yellow</option>
-</select>
-</div>
+        <form id="addprod" name="addprod" method="POST" action="addproduct.php" autocomplete="off">
+            <div class="mb-3 text-start">
+                <label for="recipient-name" class="col-form-label">Enter Product Name:</label>
+                <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="row text-start"> 
+                
+                <label for="recipient-name">
+                </label>
 
-<div class="row text-start">
-     <label for="recipient-name" >Select Size</label>
-<select class="form-select" aria-label="Default select example">
-  <option selected></option>
-  <option value="1">Small </option>
-  <option value="2">Medium</option>
-  <option value="3">Large</option>
-  <option value="4">XL</option>
-</select>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected></option>
+                    <option value="1">Blue </option>
+                    <option value="2">Red</option>
+                    <option value="3">Green</option>
+                    <option value="4">Yellow</option>
+                </select>
+            </div>
 
-</div>
-
-<div class="row text-start">
- <label for="recipient-name" >Select Brand:</label>
-<select class="form-select" aria-label="Default select example">
-  <option selected></option>
-  <option value="1">Bench</option>
-  <option value="2">Penshoppe</option>
-  <option value="3">Blue Corner</option>
-  <option value="4">Nike</option>
-</select>
-
-</div>
+            <div class="modal-footer">
+                <input type="submit" value="Save" id="saveprod" name="saveprod" class="btn btn-primary">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+            </div>
         </form>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save</button>
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
-      </div>
-
-        
             </div>
           </div>
         </div>
@@ -76,163 +53,110 @@ include '../includes/sidebardash.php';
 
 <table id="example" class="display border" style="width:100%">
   <thead>
-    <tr>
+  
+  <tr>
       <th>Product ID</th>
-      <th>Product Name</th>
-      <th>Product Type</th>
-      <th>Product Size</th>
-      <th>Product Color</th>
-      <th>Item Quantity</th>
-      <th>Item Sold</th>
+      <th>Photo</th>
+      <th>Description</th>
+      <th>Quantity</th>
       <th>Manage</th>
     </tr>
   </thead>
 
-<<<<<<< HEAD
-        <tbody>
-            <tr>
-                <td>S-0001</td>
-                <td>Short-01</td>
-                <td>Nike</td>
-                <td>Small </td>
-                <td>Brown</td>
-                <td>500</td>
-                <td>200</td>
-                <td> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>   
+  <tbody>
+    <tr>
+      <td style="width: 100px;">S-0001</td>
+      <td style="width:85px"><img src="image/short.jpg" style="width: 85px;height:50px" alt="" srcset=""></td>
+      <td class="d-flex flex-column">
+        <div class="row">
+          <div class="col d-flex justify-content-end"><label><span class="text-muted">Name: </span>Short</label></div>
+          <div class="col"><label><span class="text-muted">Size: </span>Medium</label></div>
+        </div>
+        <div class="row">
+          <div class="col d-flex justify-content-end"><label><span class="text-muted">Type: </span>Adidas</label></div>
+          <div class="col"><label><span class="text-muted">Color: </span>Pink</label></div>
+        </div>
+      </td>
+      <td style="width:200px">
+        <label><span class="text-muted">Stocks: </span>500</label><br>
+        <label><span class="text-muted">Sold: </span>150</label>
+      </td>
+      <td style="width: 100px;"> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>
+
+      <tr>
+      <td style="width: 100px;">S-0002</td>
+      <td style="width:85px"><img src="image/short2.jpg" style="width: 85px;height:50px" alt="" srcset=""></td>
+      <td class="d-flex flex-column">
+        <div class="row">
+          <div class="col d-flex justify-content-end"><label><span class="text-muted">Name: </span>Short </label></div>
+          <div class="col"><label><span class="text-muted">Size: </span>Small</label></div>
+        </div>
+        <div class="row">
+          <div class="col d-flex justify-content-end"><label><span class="text-muted">Type: </span>Adidas</label></div>
+          <div class="col"><label><span class="text-muted">Color: </span>Red</label></div>
+        </div>
+      </td>
+      <td style="width:200px">
+        <label><span class="text-muted">Stocks: </span>300</label><br>
+        <label><span class="text-muted">Sold: </span>200</label>
+      </td>
+      <td style="width: 100px;"> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>
+
+    </tr>
+
+
+
+
+      <tr>
+      <td style="width: 100px;">S-0003</td>
+      <td style="width:85px"><img src="image/navyblue.jpeg" style="width: 85px;height:50px" alt="" srcset=""></td>
+      <td class="d-flex flex-column">
+        <div class="row">
+          <div class="col d-flex justify-content-end"><label><span class="text-muted">Name: </span>Short</label></div>
+          <div class="col"><label><span class="text-muted">Size: </span>medium</label></div>
+        </div>
+        <div class="row">
+          <div class="col d-flex justify-content-end"><label><span class="text-muted">Type: </span>Nike</label></div>
+          <div class="col"><label><span class="text-muted">Color: </span>Navy Blue</label></div>
+        </div>
+      </td>
+      <td style="width:200px">
+        <label><span class="text-muted">Stocks: </span>650</label><br>
+        <label><span class="text-muted">Sold: </span>400</label>
+      </td>
+      <td style="width: 100px;"> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>
+
+    </tr>
+
+
+
+
+
+    <tr>
+      <td style="width: 100px;">S-0004</td>
+      <td style="width:85px"><img src="image/short3.jpg" style="width: 85px;height:50px" alt="" srcset=""></td>
+      <td class="d-flex flex-column">
+        <div class="row">
+          <div class="col d-flex justify-content-end"><label><span class="text-muted">Name: </span>Short</label></div>
+          <div class="col"><label><span class="text-muted">Size: </span>Small</label></div>
+        </div>
+        <div class="row">
+          <div class="col d-flex justify-content-end"><label><span class="text-muted">Type: </span>Nike</label></div>
+          <div class="col"><label><span class="text-muted">Color: </span>Yellow</label></div>
+        </div>
+      </td>
+      <td style="width:200px">
+        <label><span class="text-muted">Stocks: </span> 400</label><br>
+        <label><span class="text-muted">Sold: </span>150</label>
+      </td>
+      <td style="width: 100px;"> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>
+
+    </tr>
+
+     
+     
+       
            
-            </tr>  
-
-            <tr>
-                <td>S-0002</td>
-                <td>Short-02</td>
-                <td>Nike</td>
-                <td>Small </td>
-                <td>Mustard</td>
-                <td>300</td>
-                <td>120</td>
-                <td> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>   
-          
-            </tr>  
-
-            <tr>
-                <td>S-0003</td>
-                <td>Short-03</td>
-                <td>Nike</td>
-                <td>Medium</td>
-                <td>Blue</td>
-                <td>400</td>
-                <td>120</td>
-                <td> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>   
-        
-            </tr>   
-
-            <tr>
-                <td>S-0004</td>
-                <td>Short-04</td>
-                <td>Nike</td>
-                <td>Large</td>
-                <td>Green</td>
-                <td>500</td>
-                <td>200</td>
-                <td> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>   
-          
-            </tr>
-
-            <tr>
-                <td>S-0005</td>
-                <td>Short-05</td>
-                <td>Nike</td>
-                <td>XL</td>
-                <td>Yellow</td>
-                <td>600</td>
-                <td>560</td>
-                <td> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>   
-         
-            </tr>
-
-            <tr>
-                <td>S-0006</td>
-                <td>Short-06</td>
-                <td>Nike</td>
-                <td>Medium</td>
-                <td>Maroon</td>
-                <td>300</td>
-                <td>50</td>
-                <td> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>   
-          
-            </tr>
-
-            <tr>
-                <td>S-0007</td>
-                <td>Short-07</td>
-                <td>Adidas</td>
-                <td>Large</td>
-                <td>Purple</td>
-                <td>350</td>
-                <td>100</td>
-                <td> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>   
-         
-            </tr>
-
-            <tr>
-                <td>S-0008</td>
-                <td>Short-08</td>
-                <td>Adidas</td>
-                <td>Small</td>
-                <td>Orange</td>
-                <td>400</td>
-                <td>120</td>
-                <td> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>   
-         
-            </tr>
-             
-            <tr>
-                <td>S-0009</td>
-                <td>Short-09</td>
-                <td>Adidas</td>
-                <td>Medium</td>
-                <td>Brown</td>
-                <td>500</td>
-                <td>200</td>
-                <td> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>   
-          
-            </tr>
-
-            <tr>
-                <td>S-0010</td>
-                <td>Short-010</td>
-                <td>Adidas</td>
-                <td>Medium</td>
-                <td>Gray</td>
-                <td>600</td>
-                <td>560</td>
-                <td> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>   
-          
-            </tr> 
-
-            <tr>
-                <td>S-0011</td>
-                <td>Short-011</td>
-                <td>Adidas</td>
-                <td>Large</td>
-                <td>Pink</td>
-                <td>300</td>
-                <td>50</td>
-                <td> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>   
-           
-            </tr>
-
-            <tr>
-                <td>S-0012</td>
-                <td>Short-012</td>
-                <td>Adidas</td>
-                <td>XL</td>
-                <td>Navy Blue</td>
-                <td>350</td>
-                <td>100</td>
-                <td> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>   
-           
-            </tr>  
         </tbody>        
     </table>
 

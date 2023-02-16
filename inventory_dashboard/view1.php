@@ -4,9 +4,25 @@ include '../includes/navbardash.php';
 include '../includes/sidebardash.php';
 ?>
 
+<?php
+$server = "localhost";
+$username = "root";
+$con = mysqli_connect($server, $username);
+if (!$con) {
+    echo ("Can't connect!");
+}
+    mysqli_select_db($con, "inventory_system");
+    $query1 = "SELECT CategoryName FROM item_description
+                    WHERE ItemID = 1";
+    $result = mysqli_query($con, $query1);
+    $count = mysqli_num_rows($result);
+
+    $query2 = "SELECT CategoryName FROM item_description WHERE ItemID = 1";
+?>
+
 <div class="container p-2">
     <div class="row col-md-12 m-auto p-2">
-
+     <h4>T-Shirt</h4>
 <!-- ADD PRODUCT MODAL -->
 
 <div class="text-end p-2">
@@ -19,53 +35,30 @@ include '../includes/sidebardash.php';
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form>
-        <div class="mb-3 text-start">
-            <label for="recipient-name" class="col-form-label">Enter Product Name:</label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
-         <div class="row text-start"> 
-            
-         <label for="recipient-name" >Select Color:</label>
-          <select class="form-select" aria-label="Default select example">
-  <option selected></option>
-  <option value="1">Blue </option>
-  <option value="2">Red</option>
-  <option value="3">Green</option>
-  <option value="4">Yellow</option>
-</select>
-</div>
+        <form id="addprod" name="addprod" method="POST" action="addproduct.php" autocomplete="off">
+            <div class="mb-3 text-start">
+                <label for="recipient-name" class="col-form-label">Enter Product Name:</label>
+                <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="row text-start"> 
+                
+                <label for="recipient-name">
+                </label>
 
-<div class="row text-start">
-     <label for="recipient-name" >Select Size</label>
-<select class="form-select" aria-label="Default select example">
-  <option selected></option>
-  <option value="1">Small </option>
-  <option value="2">Medium</option>
-  <option value="3">Large</option>
-  <option value="4">XL</option>
-</select>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected></option>
+                    <option value="1">Blue </option>
+                    <option value="2">Red</option>
+                    <option value="3">Green</option>
+                    <option value="4">Yellow</option>
+                </select>
+            </div>
 
-</div>
-
-<div class="row text-start">
- <label for="recipient-name" >Select Brand:</label>
-<select class="form-select" aria-label="Default select example">
-  <option selected></option>
-  <option value="1">Bench</option>
-  <option value="2">Penshoppe</option>
-  <option value="3">Blue Corner</option>
-  <option value="4">Nike</option>
-</select>
-
-</div>
+            <div class="modal-footer">
+                <input type="submit" value="Save" id="saveprod" name="saveprod" class="btn btn-primary">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+            </div>
         </form>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save</button>
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
-      </div>
-
-        
             </div>
           </div>
         </div>

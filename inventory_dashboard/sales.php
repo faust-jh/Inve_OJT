@@ -17,7 +17,7 @@ include '../includes/navbardash.php';
             <li class="nav-item ">
                 <a href="../inventory_dashboard/index.php" class="nav-link "><i class="fa-solid fa-chart-line"></i> Dashboard</a>
             </li>
-            <li class="nav-item" >
+            <li class="nav-item">
                 <a href="../inventory_dashboard/inventory.php" class="nav-link "><i class="fa-solid fa-boxes-stacked me-1"></i>Inventory</a>
             </li>
             <li class="nav-item" style="  background-color: rgba(255, 145, 0, 0.979); color: black;">
@@ -49,7 +49,7 @@ include '../includes/navbardash.php';
             <li class="nav-item">
                 <a href="../inventory_dashboard/inventory.php" class="nav-link "><i class="fa-solid fa-boxes-stacked me-1"></i>Inventory</a>
             </li>
-            <li class="nav-item"  style="  background-color: rgba(255, 145, 0, 0.979); color: black;">
+            <li class="nav-item" style="  background-color: rgba(255, 145, 0, 0.979); color: black;">
                 <a href="../inventory_dashboard/sales.php" class="nav-link "><i class="fa-solid fa-dollar-sign me-1"></i>Sales</a>
             </li>
             <li class="nav-item">
@@ -58,51 +58,70 @@ include '../includes/navbardash.php';
         </ul>
     </div>
 </div>
+
 <div class="container p-2">
     <div class="row col-md-12 m-auto">
         <table id="example" class="display border" style="width:100%">
-            <?php
-            $con = mysqli_connect("localhost", "root");
-            if (!$con) {
-                echo ("Can't connect!");
-            }
-            mysqli_select_db($con, "inventory_system");
-            $sql = "SELECT ProductName FROM product WHERE ProductID > 0";
-            $query = mysqli_query($con, $sql);
-            $result = mysqli_query($con, "SELECT * FROM sales");
-            echo "<table border = '1' width = '1200' cellspacing = '0' style = 'font-size: 1.5vw'>";
-            echo "<tr bgcolor = 'lightgray'>";
-            echo "<th> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            Sales ID </th>";
-            echo "<th> Product Name </th>";
-            echo "<th> Total Defect</th>";
-            echo "<th> Total Sold </th>";
-            echo "<th> Total Revenue </th>";
-            echo "<th> Sales Date </th>";
-            echo "</tr>";
-            while ($row2 = mysqli_fetch_array($result)) {
-                $row = mysqli_fetch_array($query);
-                $temp1 = $row2['SalesID'];
-                $temp2 = $row['ProductName'];
-                $temp3 = $row2['TotalDefect'];
-                $temp4 = $row2['TotalSold'];
-                $temp5 = $row2['TotalRevenue'];
-                $temp6 = $row2['SalesDate'];
-                
-                echo "<tr>";
-                echo "<td> $temp1 </td>";
-                echo "<td> $temp2 </td>";
-                echo "<td> $temp3 </td>";
-                echo "<td> $temp4 </td>";
-                echo "<td> $temp5 </td>";
-                echo "<td> $temp6 </td>";
-                echo "</tr>";
-            }
-            mysqli_close($con);
-            echo "</table>";
-            ?>
-        </table>
+            <thead>
+                <tr>
+                    <th>Sales ID</th>
+                    <th>Total Number Sold</th>
+                    <th>Total Revenue</th>
+                    <th>Product ID</th>
+                    <th>Product Variable ID</th>
+                    <th>Product SubVariable ID</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <!--TAKING THE VALUE OF THE SALES TABLE INSIDE THE SQL DATABASE-->
+                <?php
+                $con = mysqli_connect("localhost", "root");
+                if (!$con) {
+                    echo ("Can't connect!");
+                }
+                mysqli_select_db($con, "inventory_system");
+                /*GETTING THE VALUES FROM THE PRODUCT TABLE*/
+                $sql = "SELECT ProductName FROM product WHERE ProductID > 0";
+                $sql2 = "SELECT * FROM sales";
+                $result = mysqli_query($con, $sql);
+                $result2 = mysqli_query($con, $sql2);
+                while ($row2 = mysqli_fetch_array($result2)) {
+                    $row = mysqli_fetch_array($result);
+                    $temp1 = $row2['SalesID'];
+                    $temp2 = $row['ProductName'];
+                    $temp3 = $row2['TotalDefect'];
+                    $temp4 = $row2['TotalSold'];
+                    $temp5 = $row2['TotalRevenue'];
+                    $temp6 = $row2['SalesDate'];
+
+                    echo "<tr>";
+                    echo "<td> $temp1 </td>";
+                    echo "<td> $temp2 </td>";
+                    echo "<td> $temp3 </td>";
+                    echo "<td> $temp4 </td>";
+                    echo "<td> $temp5 </td>";
+                    echo "<td> $temp6 </td>";
+                    echo "</tr>";
+                }
+                ?>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Sales ID</th>
+                    <th>Total Number Sold</th>
+                    <th>Total Revenue</th>
+                    <th>Product ID</th>
+                    <th>Product Variable ID</th>
+                    <th>Product SubVariable ID</th>
+
+
+                </tr>
+            </tfoot>
     </div>
+</div>
+</table>
+</div>
 </div>
 
 <?php

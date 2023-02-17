@@ -366,3 +366,15 @@ p{
     }
 
 }
+<<<<<<< HEAD
+=======
+.desc-box{
+background-color: #1c1c1c;
+text-align: center;
+border-radius: 10px;
+width: 300px;
+box-shadow: 0px 0px 17px 9px rgba(0,0,0,0.69);
+transition: transform .2s;
+} 
+}
+>>>>>>> 69126f6b9ed0f0a152afc8823e2ef5f4ec5c9d0d

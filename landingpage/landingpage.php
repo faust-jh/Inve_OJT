@@ -119,7 +119,7 @@ include '../includes/navbar.php';
 <section id="description-section">
     <h3 class="desc-title">Lorem ipsum dolor sit amet,</h3>
     <div id="desc-container" style="margin-top: -80px;">
-        <div class="row  d-flex justify-content-center " >
+        <div class="row  d-flex justify-content-center ">
             <div class="col  m-3">
                 <div class="desc-box">
                     <img class="desc-pic" src="../design/images/stats.png" alt="">
@@ -134,10 +134,10 @@ include '../includes/navbar.php';
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
                 </div>
             </div>
-        </div>   
+        </div>
     </div>
-    <div id="desc-container" >
-        <div class="row  d-flex justify-content-center " >
+    <div id="desc-container">
+        <div class="row  d-flex justify-content-center ">
             <div class="col  m-3">
                 <div class="desc-box">
                     <img class="desc-pic" src="../design/images/stats.png" alt="">
@@ -152,10 +152,10 @@ include '../includes/navbar.php';
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
                 </div>
             </div>
-        </div>   
+        </div>
     </div>
-    <div id="desc-container" >
-        <div class="row  d-flex justify-content-center " >
+    <div id="desc-container">
+        <div class="row  d-flex justify-content-center ">
             <div class="col  m-3">
                 <div class="desc-box">
                     <img class="desc-pic" src="../design/images/stats.png" alt="">
@@ -170,9 +170,9 @@ include '../includes/navbar.php';
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
                 </div>
             </div>
-        </div>   
+        </div>
     </div>
-   
+
 </section>
 
 
@@ -256,7 +256,7 @@ include '../includes/navbar.php';
                 </div>
                 <div class="modal-body">
                     <div class="loginData mt-3">
-                        <form id="log" name="log" method="POST" action="log.php" autocomplete="off">
+                        <form id="log" name="log" method="POST" action="../login/log.php" autocomplete="off">
                             <label for="email" class="form-label">Email</label>
                             <input type="email" class="loginInput form-control border-dark" style="border-radius: 50px; font-size:15px; " id="email" name="email" placeholder="Email@gmail.com" required>
                             <label for="password" class="form-label">Password</label>
@@ -289,7 +289,7 @@ include '../includes/navbar.php';
                 </div>
                 <div class="modal-body">
                     <div class="createData mt-3">
-                        <form id="create" name="create" method="POST" action="reg.php" autocomplete="off">
+                        <form id="create" name="create" method="POST" action="../register/reg.php" autocomplete="off">
                             <div class="row">
                                 <div class="col">
                                     <label for="companyname" class="form-label">Company Name </label>

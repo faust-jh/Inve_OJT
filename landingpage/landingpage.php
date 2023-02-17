@@ -14,10 +14,10 @@ include '../includes/navbar.php';
                         <span>Lorem ipsum dolor sit ametis?</span><br>
                         <button class="btn btn_getStarted mt-3">Get Started</button>
                     </div>
-                    
+
 
                 </div>
-              
+
 
             </div>
             <div class="col-md-6  d-flex flex-column justify-content-center align-items-center " style=" max-height:80vh">
@@ -118,38 +118,61 @@ include '../includes/navbar.php';
 
 <section id="description-section">
     <h3 class="desc-title">Lorem ipsum dolor sit amet,</h3>
-    <div id="desc-container">
-        <div class="desc-box">
-            <img class="desc-pic" src="../design/images/stats.png" alt="">
-            <h5>Lorem ipsum dolor</h5>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-        </div>
-        <div class="desc-box">
-            <img class="desc-pic" src="../design/images/stats.png" alt="">
-            <h5>Lorem ipsum dolor</h5>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-        </div>
-        <div class="desc-box">
-            <img class="desc-pic" src="../design/images/stats.png" alt="">
-            <h5>Lorem ipsum dolor</h5>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-        </div>
-        <div class="desc-box">
-            <img class="desc-pic" src="../design/images/stats.png" alt="">
-            <h5>Lorem ipsum dolor</h5>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-        </div>
-        <div class="desc-box">
-            <img class="desc-pic" src="../design/images/stats.png" alt="">
-            <h5>Lorem ipsum dolor</h5>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-        </div>
-        <div class="desc-box">
-            <img class="desc-pic" src="../design/images/stats.png" alt="">
-            <h5>Lorem ipsum dolor</h5>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-        </div>
+    <div id="desc-container" style="margin-top: -80px;">
+        <div class="row  d-flex justify-content-center " >
+            <div class="col  m-3">
+                <div class="desc-box">
+                    <img class="desc-pic" src="../design/images/stats.png" alt="">
+                    <h5>Lorem ipsum dolor</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                </div>
+            </div>
+            <div class="col  m-3">
+                <div class="desc-box">
+                    <img class="desc-pic" src="../design/images/stats.png" alt="">
+                    <h5>Lorem ipsum dolor</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                </div>
+            </div>
+        </div>   
     </div>
+    <div id="desc-container" >
+        <div class="row  d-flex justify-content-center " >
+            <div class="col  m-3">
+                <div class="desc-box">
+                    <img class="desc-pic" src="../design/images/stats.png" alt="">
+                    <h5>Lorem ipsum dolor</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                </div>
+            </div>
+            <div class="col  m-3">
+                <div class="desc-box">
+                    <img class="desc-pic" src="../design/images/stats.png" alt="">
+                    <h5>Lorem ipsum dolor</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                </div>
+            </div>
+        </div>   
+    </div>
+    <div id="desc-container" >
+        <div class="row  d-flex justify-content-center " >
+            <div class="col  m-3">
+                <div class="desc-box">
+                    <img class="desc-pic" src="../design/images/stats.png" alt="">
+                    <h5>Lorem ipsum dolor</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                </div>
+            </div>
+            <div class="col  m-3">
+                <div class="desc-box">
+                    <img class="desc-pic" src="../design/images/stats.png" alt="">
+                    <h5>Lorem ipsum dolor</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                </div>
+            </div>
+        </div>   
+    </div>
+   
 </section>
 
 
@@ -198,24 +221,24 @@ include '../includes/navbar.php';
                     </div>
                 </div>
 
-             
+
 
 
             </div>
 
         </div>
         <div class="sm-icons-container">
-        <img class="social-media-icon" src="../design/images/facebook.png" alt="">
-        <img class="social-media-icon" src="../design/images/instagram.png" alt="">
-        <img class="social-media-icon" src="../design/images/youtube.png" alt="">
-        <img class="social-media-icon" src="../design/images/twitter.png" alt="">
-    </div>
-    <div style="display: flex; justify-content: center; width: 100%;">
-        <p style="padding:15px; border-right: 1px solid #f5f5f5;">Home</p>
-        <p style="padding:15px; border-right: 1px solid #f5f5f5;">About us</p>
-        <p style="padding:15px; border-right: 1px solid #f5f5f5;">Contacts</p>
-        <p style="padding:15px;">Login</p>
-    </div>
+            <img class="social-media-icon" src="../design/images/facebook.png" alt="">
+            <img class="social-media-icon" src="../design/images/instagram.png" alt="">
+            <img class="social-media-icon" src="../design/images/youtube.png" alt="">
+            <img class="social-media-icon" src="../design/images/twitter.png" alt="">
+        </div>
+        <div style="display: flex; justify-content: center; width: 100%;">
+            <p style="padding:15px; border-right: 1px solid #f5f5f5;">Home</p>
+            <p style="padding:15px; border-right: 1px solid #f5f5f5;">About us</p>
+            <p style="padding:15px; border-right: 1px solid #f5f5f5;">Contacts</p>
+            <p style="padding:15px;">Login</p>
+        </div>
 
     </div>
 
@@ -300,126 +323,11 @@ include '../includes/navbar.php';
     <div id="copyright">
         <h6 style="padding:5px;">Copyright © 2023 LogoName | All Rights Reserved.</h6>
     </div>
-</section>
+    </section>
 
 
 
 
-
-    <style>
-        #contact-section h1,p,h4{
-            color:#f5f5f5;
-        }
-        #contact-section{
-            background-color: #1c1c1c;
-        }
-
-        #contact-container {
-            background-color: transparent;
-            width: 100%;
-            height: 90%;
-        }
-
-        #copyright {
-            background-color: #FCBF4F;
-            width: 100%;
-            text-align: center;
-
-        }
-
-        .grid-container {
-            display: grid;
-            grid-template-columns: 50% 50%;
-        }
-
-        .left-container {
-            display: flex;
-            justify-content: center;
-            align-items: start;
-        }
-
-        .right-container {
-            display: flex;
-            justify-content: center;
-            align-items: start;
-        }
-
-        .logo-container {
-            width: 270px;
-            padding: 10px;
-        }
-
-        .sm-icons-container {
-            width: 100%;
-            text-align: center;
-            margin-bottom: 15px;
-        }
-
-        .social-media-icon {
-            width: 40px;
-            margin: 0 15px 0 15px;
-        }
-
-        h5 {
-        color: #f5f5f5;
-    }
-
-    .desc-title {
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 100px;
-
-    }
-
-    #description-section {
-        margin-bottom: 150px;
-    }
-
-    #desc-container {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-gap: 50px;
-        justify-content: center;
-    }
-
-    .desc-box {
-        background-color: #1c1c1c;
-        text-align: center;
-        border-radius: 10px;
-        width: 300px;
-        box-shadow: 0px 0px 17px 9px rgba(0, 0, 0, 0.69);
-        transition: transform .2s;
-    }
-
-    .desc-box:hover {
-        transform: scale(1.1);
-    }
-
-    .desc-box .desc-pic {
-        margin: 25px 0 35px 0;
-        width: 100px;
-    }
-
-    .desc-box h5 {
-        font-weight: bold;
-    }
-
-    .desc-box p {
-        padding: 0 15px 0 15px;
-    }
-    @media only screen and (max-width: 1200px) {
-    #desc-container {
-        grid-template-columns: auto auto;
-    }
-    .desc-box{
-        background-color: #1c1c1c;
-        text-align: center;
-        border-radius: 10px;
-        width: 300px;
-        box-shadow: 0px 0px 17px 9px rgba(0,0,0,0.69);
-        transition: transform .2s;
-    }
-    </style>
 </footer>
 
 <?php

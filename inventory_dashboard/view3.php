@@ -73,7 +73,6 @@ include '../includes/sidebardash.php';
 </div>
 </div>
 
-
 <table id="example" class="display border" style="width:100%">
   <thead>
     <tr>
@@ -105,7 +104,7 @@ include '../includes/sidebardash.php';
       </td>
       <td style="width: 100px;"> <button type="button" class="btn bg-primary text-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp; &nbsp;<button class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></button></td>
 
-      <tr>
+    <tr>
       <td style="width: 100px;">D-0002</td>
       <td style="width:85px"><img src="image/coocktail2.jpeg" style="width: 85px;height:50px" alt="" srcset=""></td>
       <td class="d-flex flex-column">
@@ -129,7 +128,7 @@ include '../includes/sidebardash.php';
 
 
 
-      <tr>
+    <tr>
       <td style="width: 100px;">D-0003</td>
       <td style="width:85px"><img src="image/formal.jpeg" style="width: 85px;height:50px" alt="" srcset=""></td>
       <td class="d-flex flex-column">

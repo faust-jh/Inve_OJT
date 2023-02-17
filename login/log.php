@@ -25,7 +25,7 @@ if (!empty($_POST['login'])) {
     } else {
         echo '<script type = "text/javascript">
         alert("Invalid Username and Password!");
-        window.location.href = "loginpage.php";
+        window.location.href = "../landingpage/landingpage.php";
         </script>';
     }
 }

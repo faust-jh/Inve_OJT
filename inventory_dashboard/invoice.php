@@ -3,11 +3,6 @@ include '../includes/headerdash.php';
 include '../includes/navbardash.php';
 ?>
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 26935aa50ba60561fa559f5a12baf60357d43a60
 <div class="offcanvas offcanvas-start box-shadow-2" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
     <div class="offcanvas-header ">
         <button type="button" class="btn-close text-reset sidebar-close-btn" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -37,6 +32,8 @@ include '../includes/navbardash.php';
     </div>
 </div>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> 
+  
 
 <div class="container p-3 ">
 <div class="row col-md-6   border mx-auto ">
@@ -56,21 +53,20 @@ include '../includes/navbardash.php';
             <br>
             <label for="Staff">Staff:</label>
             <input type="text" id="Staff" class="border-0" value="Hunter">
-            <p>---------------------------------------------------</p>
-            <p style="font-size:60px;text-align:center;">Z-REPORT</p>
-            <p>---------------------------------------------------</p>
-            <table>
-               <tr> 
-             <td ><label for="Cash">Cash:</label></td>
-             <td ><input type="text" id="Cash" class="border-0" size="3" value="1,132.13"></td>
+            <table class="table">
+            <tr>
+            <td colspan="2"><p style="font-size:60px;text-align:center;">Z-REPORT</p></td >
+            </tr>
+            
+            <tr> 
+            <td ><label for="Cash">Cash:</label></td>
+            <td ><input type="text" id="Cash" class="border-0" size="3" value="1,132.13"></td>
             </tr>
             <tr> 
             <td ><label for="Total">Total:</label></td>
             <td ><input type="text" id="Total" class="border-0" size="3" value="1,132.13"></td>
             </tr>
-            <tr><th colspan="2"><p>---------------------------------------------------</p><td ></tr>
-            <tr><th colspan="2"><p>---------------------------------------------------</p><td ></tr>
-            <tr><th colspan="2"><p>---------------------------------------------------</p><td ></tr>
+
             <tr> 
             <td ><label for="GrossSales">Gross Sales:</label></td>
             <td ><input type="text" id="GrossSales" class="border-0" size="3" value="1,132.63"></td>
@@ -83,12 +79,12 @@ include '../includes/navbardash.php';
             <td><label for="Rounding">Rounding:</label></td>
             <td ><input type="text" id="Rounding" class="border-0" size="3" value="0.00"></td>
             </tr>
-            <tr><th colspan="2"><p>---------------------------------------------------</p><td ></tr>
+
             <tr>
             <td ><label for="TotalNetSales">Total Net Sales:</label></td>
             <td ><input type="text" id="TotalNetSales" class="border-0" size="3" value="1,132.63"></td>
             </tr>
-            <tr><th colspan="2"><p>---------------------------------------------------</p></tr>
+
             <tr>
             <td ><label for="NoofPayingCustomers">No. of Paying Customers:</label></td>
             <td ><input type="text" id="NoofPayingCustomers" class="border-0" size="3" value="17"></td>
@@ -125,22 +121,21 @@ include '../includes/navbardash.php';
             <td><label for="NoofLogins">No. of Logins:</label></td>
             <td ><input type="text" id="NoofLogins" class="border-0" size="3" value="0"></td>
             </tr>
-            <tr><th colspan="2"><p>---------------------------------------------------</p></td></tr>
+
             <tr>
             <td><label for="ZReportId">Z-Report ID:</label></td>
             <td ><input type="text" id="ZReportId" class="border-0" size="3" value="T000001"></td>
             </tr>
-            <tr><th colspan="2"><p>---------------------------------------------------</p></td></tr>
+
             <tr>
             <td><label for="AccumulatedNetSales">Accumulated Net Sales:</label></td>
             <td ><input type="text" id="AccumulatedNetSales" class="border-0" size="3" value="1,132.13"></td>
             </tr>
-            <tr><th colspan="2"><p>---------------------------------------------------</p></td></tr>
+
             </table>
             </div> 
-    </div>
-</div>
+            </div>
 
 
 <?php
-include '../includes/footerdash.php';
+include '../includes/footerdash.php';                                                                                                                                                        

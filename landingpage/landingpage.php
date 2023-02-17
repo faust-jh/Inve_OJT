@@ -120,7 +120,7 @@ include '../includes/navbar.php';
     <h3 class="desc-title">Lorem ipsum dolor sit amet,</h3>
     <div id="desc-container" style="margin-top: -80px;">
         <div class="row  d-flex justify-content-center " >
-            <div class="col  m-3 desc-box-flex">
+            <div class="col  m-3 ">
                 <div class="desc-box">
                     <img class="desc-pic" src="../design/images/stats.png" alt="">
                     <h5>Lorem ipsum dolor</h5>

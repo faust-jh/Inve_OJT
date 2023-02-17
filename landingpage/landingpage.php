@@ -120,7 +120,7 @@ include '../includes/navbar.php';
     <h3 class="desc-title">Lorem ipsum dolor sit amet,</h3>
     <div id="desc-container" style="margin-top: -80px;">
         <div class="row  d-flex justify-content-center ">
-            <div class="col  m-3">
+            <div class="col  m-3 ">
                 <div class="desc-box">
                     <img class="desc-pic" src="../design/images/stats.png" alt="">
                     <h5>Lorem ipsum dolor</h5>
@@ -220,10 +220,6 @@ include '../includes/navbar.php';
                         </div>
                     </div>
                 </div>
-
-
-
-
             </div>
 
         </div>
@@ -321,7 +317,7 @@ include '../includes/navbar.php';
         </div>
     </div>
     <div id="copyright">
-        <h6 style="padding:5px;">Copyright © 2023 LogoName | All Rights Reserved.</h6>
+        <p style="margin-bottom: 0; padding:5px; color: black;">Copyright © 2023 LogoName | All Rights Reserved.</p>
     </div>
     </section>
 

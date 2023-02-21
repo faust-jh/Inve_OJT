@@ -1,7 +1,6 @@
 <?php
 include '../includes/headerdash.php';
 include '../includes/navbardash.php';
-
 ?>
 
 <div class="offcanvas offcanvas-start box-shadow-2" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
@@ -61,66 +60,33 @@ include '../includes/navbardash.php';
 
 <div class="container p-2">
     <div class="row col-md-12 m-auto">
-        <table id="example" class="display border" style="width:100%">
+        <table id="example" class="display border dataTable" style="width:100%">
             <thead>
                 <tr>
                     <th>Sales ID</th>
-                    <th>Total Number Sold</th>
+                    <th>Product Name</th>
+                    <th>Total Sold</th>
+                    <th>Total Defect</th>
                     <th>Total Revenue</th>
-                    <th>Product ID</th>
-                    <th>Product Variable ID</th>
-                    <th>Product SubVariable ID</th>
-
+                    <th>Sales Date</th>
                 </tr>
             </thead>
             <tbody>
-                <!--TAKING THE VALUE OF THE SALES TABLE INSIDE THE SQL DATABASE-->
-                <?php
-                $con = mysqli_connect("localhost", "root");
-                if (!$con) {
-                    echo ("Can't connect!");
-                }
-                mysqli_select_db($con, "inventory_system");
-                /*GETTING THE VALUES FROM THE PRODUCT TABLE*/
-                $sql = "SELECT ProductName FROM product WHERE ProductID > 0";
-                $sql2 = "SELECT * FROM sales";
-                $result = mysqli_query($con, $sql);
-                $result2 = mysqli_query($con, $sql2);
-                while ($row2 = mysqli_fetch_array($result2)) {
-                    $row = mysqli_fetch_array($result);
-                    $temp1 = $row2['SalesID'];
-                    $temp2 = $row['ProductName'];
-                    $temp3 = $row2['TotalDefect'];
-                    $temp4 = $row2['TotalSold'];
-                    $temp5 = $row2['TotalRevenue'];
-                    $temp6 = $row2['SalesDate'];
-
-                    echo "<tr>";
-                    echo "<td> $temp1 </td>";
-                    echo "<td> $temp2 </td>";
-                    echo "<td> $temp3 </td>";
-                    echo "<td> $temp4 </td>";
-                    echo "<td> $temp5 </td>";
-                    echo "<td> $temp6 </td>";
-                    echo "</tr>";
-                }
-                ?>
             </tbody>
             <tfoot>
                 <tr>
                     <th>Sales ID</th>
-                    <th>Total Number Sold</th>
+                    <th>Product Name</th>
+                    <th>Total Sold</th>
+                    <th>Total Defect</th>
                     <th>Total Revenue</th>
-                    <th>Product ID</th>
-                    <th>Product Variable ID</th>
-                    <th>Product SubVariable ID</th>
-
-
+                    <th>Sales Date</th>
                 </tr>
             </tfoot>
     </div>
 </div>
 </table>
+<script src="../../api/salescaller.js" type="text/javascript" defer></script>
 </div>
 </div>
 

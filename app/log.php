@@ -20,7 +20,7 @@ if (!empty($_POST['login'])) {
         $_SESSION['CompanyPass'] = $pass;
         echo '<script type = "text/javascript">
         alert("Account login Succesfully!");
-        window.location.href = "../inventory_dashboard/index.php";
+        window.location.href = "../public/inventory_dashboard/index.php";
         </script>';
     } else {
         echo '<script type = "text/javascript">

@@ -115,41 +115,30 @@ include '../includes/navbardash.php';
 </div>
 
 <div class="container px-5">
-  <table id="example" class="display border" style="width:100%">
+  <table id="example" class="display border dataTable" style="width:100%">
     <thead>
       <tr>
         <th>Item ID</th>
         <th>Item Name</th>
-        <th>Manage</th>
+        <th></th>
+        <th></th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
-      <!-- TAKING THE INFORMATION FROM THE DATABASE SO THAT I CAN DISPLAY IT IN THIS PAGE -->
-      <?php
-      $con = mysqli_connect("localhost", "root");
-      if (!$con) {
-        echo ("Can't connect!");
-      }
-      mysqli_select_db($con, "inventory_system");
-      $sqlitem = "SELECT * FROM item";
-      $result = mysqli_query($con, $sqlitem);
-      while ($row = mysqli_fetch_array($result)) {
-        $temp1 = $row['ItemID'];
-        $temp2 = $row['ItemName'];
-        echo '<tr>';
-        echo "<td> $temp1 </td>";
-        echo "<td> $temp2 </td>";
-        echo '<td style="width: 150px;"> <a href="view1.php" class="btn bg-primary text-white btn-sm"><i class="fa-regular fa-eye"></i></a>&nbsp; &nbsp;<a href="" class="btn bg-primary text-white btn-sm"><i class="fa-solid fa-pen-to-square"></i></a>&nbsp; &nbsp;<a href="" class="btn bg-danger text-white btn-sm"><i class="fa-solid fa-trash"></i></a></td>';
-      }
-      ?>
     </tbody>
+    <tfoot>
+      <tr>
+        <th>Item ID</th>
+        <th>Item Name</th>
+      </tr>
+    </tfoot>
   </table>
+  <script src="../../api/inventorycaller.js" type="text/javascript" defer></script>
 </div>
 </div>
 </div>
 </div>
-
-
 
 <script>
   const alertPlaceholder = document.getElementById('liveAlertPlaceholder')

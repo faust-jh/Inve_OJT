@@ -252,7 +252,7 @@ include '../includes/navbar.php';
                 </div>
                 <div class="modal-body">
                     <div class="loginData mt-3">
-                        <form id="log" name="log" method="POST" action="../login/log.php" autocomplete="off">
+                        <form id="log" name="log" method="POST" action="../../app/log.php" autocomplete="off">
                             <label for="email" class="form-label">Email</label>
                             <input type="email" class="loginInput form-control border-dark" style="border-radius: 50px; font-size:15px; " id="email" name="email" placeholder="Email@gmail.com" required>
                             <label for="password" class="form-label">Password</label>
